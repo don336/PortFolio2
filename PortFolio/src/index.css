@@ -24,3 +24,12 @@ img{
     width: 500px;
     object-fit: cover;
 }
+
+@media screen and (max-width: 500px) {
+  img{
+    border-radius: 15px;
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+}

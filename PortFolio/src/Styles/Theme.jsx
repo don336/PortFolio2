@@ -4,6 +4,7 @@ export const COLORS = {
   LINEN: "#FFEDDF",
   BLACKOLIVE: "#434A42",
   DARKGREY: "#333",
+  GREY: "#3a3a3a",
 };
 
 export const FONT = {

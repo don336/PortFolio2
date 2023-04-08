@@ -1,4 +1,4 @@
-import { Container, Grid, Box, Typography, CardMedia } from "@mui/material";
+import { Grid, Typography } from "@mui/material";
 import CustomButtom from "../../Elements/CustomButton/CustomButton";
 import { COLORS } from "../../Styles/Theme";
 import { StyledTypography, StyledBox, StyledContainer } from "./showcase.style";
@@ -21,7 +21,7 @@ const Showcase = () => {
             marginBottom: "30px",
           }}
         >
-          <img src={home} alt="img" width={300} className="img1"/>
+          <img src={home} alt="img" width={300} className="img1" />
         </Grid>
         <Grid
           item
@@ -43,8 +43,8 @@ const Showcase = () => {
             </Typography>
             <StyledTypography variant="h6">
               "Welcome to my portfolio! My name is Ssemugabi Martin, and I am a
-              passionate frontend developer. With one years of experience in web
-              development, I have honed my skills in creating dynamic and
+              passionate frontend developer. With a one year of experience in
+              web development, I have honed my skills in creating dynamic and
               engaging user interfaces that deliver seamless user experiences".
             </StyledTypography>
             <CustomButtom fontcolor={COLORS.DARKGREY}>Read More</CustomButtom>
