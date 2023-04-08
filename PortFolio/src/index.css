@@ -1,0 +1,26 @@
+#root {
+  color: black;
+  flex-direction: column;
+}
+
+.primary-color {
+  background: #d1603d;
+  padding: 5px;
+  border-radius: 5px;
+  color: #333;
+}
+
+
+.img1{
+    opacity: 0.5;
+    border-radius: 15px;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+img{
+    border-radius: 15px;
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+}
