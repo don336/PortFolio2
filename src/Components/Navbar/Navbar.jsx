@@ -4,7 +4,7 @@ import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import { Box, SwipeableDrawer, Button, Stack } from "@mui/material";
+import { Box, SwipeableDrawer, Button, Stack, Typography } from "@mui/material";
 import {
   StyledList,
   StyledLink,
@@ -76,14 +76,14 @@ export default function SwipeableTemporaryDrawer() {
               }}
             >
               <StyledBox>
-                <StyledTypography variant="h1">
+                <Typography variant="h1" color={COLORS.CINNARBAR} >
                   <SpaOutlinedIcon
                     style={{
                       color: `${COLORS.CINNARBAR}`,
                     }}
                   />{" "}
                   DOM.
-                </StyledTypography>
+                </Typography>
                 <StyledTypography variant="h6">
                   Ssemugabi Martin Luther
                 </StyledTypography>

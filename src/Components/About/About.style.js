@@ -11,7 +11,7 @@ export const StyledTypography = styled(muiTypography)`
   padding: 10px;
 `;
 export const BorderBox = styled(muiBox)`
-  border-left: 15px solid ${COLORS.CINNARBAR};
+  border-left: 3px solid ${COLORS.CINNARBAR};
 `;
 export const StyledBox = styled(muiBox)`
   display: flex;
@@ -43,8 +43,8 @@ export const ContactBox = styled(muiBox)`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #000000;
-  font-weight: ;
+  color: #fff;
+  font-weight: 700;
   &:hover {
     cursor: pointer;
     box-shadow: ${({ boxshadow }) =>

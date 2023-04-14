@@ -20,7 +20,7 @@ export const StyledBox = styled(muiBox)`
   background: #3a3a3a;
   border-radius: 15px;
   padding: 10px;
-  height: 400px;
+  height: 550px;
 `;
 export const StyledContainer = styled(muiContainer)`
   display: flex;
@@ -29,5 +29,5 @@ export const StyledContainer = styled(muiContainer)`
   margin: auto;
   flex-direction: column;
   margin-top: 50px;
-  margin-bottom: 150px;
+  margin-bottom: 50px;
 `;

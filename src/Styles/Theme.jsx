@@ -1,6 +1,6 @@
-import { createTheme } from "@mui/material"
+import { createTheme } from "@mui/material";
 export const COLORS = {
-  CINNARBAR: "#D1603D",
+  CINNARBAR: "#9acd32",
   LINEN: "#FFEDDF",
   BLACKOLIVE: "#434A42",
   DARKGREY: "#333",
@@ -84,12 +84,12 @@ export const theme = createTheme({
     },
     h5: {
       fontSize: FONT.SIZES[16],
-      lineHeight: FONT.LINE_HEIGHT,
+      lineHeight: FONT.LINE_HEIGHT[26],
       fontWeight: FONT.WEIGHT.REGULAR,
     },
     h6: {
-      fontSize: FONT.SIZES[14],
-      lineHeight: FONT.LINE_HEIGHT,
+      fontSize: FONT.SIZES[12],
+      lineHeight: FONT.LINE_HEIGHTS[26],
       fontWeight: FONT.WEIGHT.REGULAR,
     },
     h7: {
