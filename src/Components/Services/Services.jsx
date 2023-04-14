@@ -19,7 +19,7 @@ const Services = () => {
       <Grid
         container
         spacing={{ xs: 2, md: 2 }}
-        columns={{ xs: 1, sm: 2, md: 12 }}
+        columns={{ xs: 2, sm: 2, md: 12 }}
       >
         <Grid item xs={2} sm={4} md={3}>
           <StyledCard sx={{ width: 275 }}>

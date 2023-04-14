@@ -5,12 +5,13 @@ import {
   StyledTypography,
   BorderBox,
   StyledBox,
-  StyledTextarea,
+  ContactBox,
 } from "./Contact.style";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import { Grid, Box, TextField } from "@mui/material";
+import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
+import { Grid, Box, Stack } from "@mui/material";
 
 const Contact = () => {
   return (
@@ -59,37 +60,47 @@ const Contact = () => {
           }}
         >
           <Box sx={{ mt: 3 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12}>
-                <TextField
+            <Stack direction="row" spacing={2} mt={3}>
+              <ContactBox>
+                <PhoneIphoneOutlinedIcon
                   sx={{
-                    color: "#fff",
+                    color: `${COLORS.CINNARBAR}`,
                   }}
-                  required
-                  fullWidth
-                  variant="outlined"
-                  id="name"
-                  label="Name"
-                  name="name"
-                  autoComplete="name"
                 />
-              </Grid>
-              <Grid item xs={12}>
-                <StyledTextarea
-                  required
-                  aria-label="Mesage"
-                  minRows={10}
-                  placeholder="Enter Mesasage"
+                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
+                  PHONE
+                  <StyledTypography variant="h6">
+                    +256 786 760 482
+                  </StyledTypography>
+                </StyledTypography>
+              </ContactBox>
+              <ContactBox>
+                <EmailOutlinedIcon
+                  sx={{
+                    color: `${COLORS.CINNARBAR}`,
+                  }}
                 />
-              </Grid>
-            </Grid>
-            <CustomButton
-              variant="contained"
-              width="100%"
-              fontcolor={COLORS.DARKGREY}
-            >
-              Send Message
-            </CustomButton>
+                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
+                  EMAIL
+                  <StyledTypography variant="h6">
+                    smgmartinez92@gmail.com
+                  </StyledTypography>
+                </StyledTypography>
+              </ContactBox>
+              <ContactBox>
+                <ChatBubbleOutlineOutlinedIcon
+                  sx={{
+                    color: `${COLORS.CINNARBAR}`,
+                  }}
+                />
+                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
+                  EMAIL
+                  <StyledTypography variant="h6">
+                    smgmartinez92@gmail.com
+                  </StyledTypography>
+                </StyledTypography>
+              </ContactBox>
+            </Stack>
           </Box>
         </Grid>
       </Grid>

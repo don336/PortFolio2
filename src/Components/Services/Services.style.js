@@ -43,7 +43,7 @@ export const StyledContainer = styled(muiContainer)`
   margin-bottom: 150px;
 `;
 export const BorderBox = styled(muiBox)`
-  border-left: 15px solid ${COLORS.CINNARBAR};
+  border-left: 3px solid ${COLORS.CINNARBAR};
 `;
 export const StyledCard = styled(muiCard)`
   display: flex;
