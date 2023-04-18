@@ -4,7 +4,7 @@ import {
   Typography as muiTypography,
   Box as muiBox,
   Button as muiButton,
-  Link
+  Link,
 } from "@mui/material";
 // import { Link } from "react-router-dom";
 import { COLORS } from "../../Styles/Theme";
@@ -41,11 +41,11 @@ export const Item = styled(Link)`
   padding: 5px;
   &:hover {
     cursor: pointer;
-    background: ${({ hoverbackground }) => hoverbackground || COLORS.CINNARBAR};
     box-shadow: ${({ boxshadow }) =>
       boxshadow ? "0rem 0.375rem 0.375rem rgba(0, 0, 0, 0.32)" : "auto"};
     color: ${({ hovercolor }) => hovercolor || COLORS.DARKGREY};
     border-radius: 5px;
+    left: 6px;
   }
 `;
 
@@ -53,14 +53,11 @@ export const StyledButton = styled(muiButton)`
   color: ${COLORS.CINNARBAR};
   &:hover {
     cursor: pointer;
-    background: ${({ hoverbackground }) => hoverbackground || COLORS.CINNARBAR};
-    box-shadow: ${({ boxshadow }) =>
-      boxshadow ? "0rem 0.375rem 0.375rem rgba(0, 0, 0, 0.32)" : "auto"};
     color: ${({ hovercolor }) => hovercolor || "#333"};
   }
 `;
 
 export const SideBox = styled(muiBox)`
-  background: #272d2d;
+  background: #333;
   min-height: 100vh;
 `;

@@ -6,9 +6,10 @@ import {
   BorderBox,
   StyledBox,
   ContactBox,
+  StyledLink,
 } from "./Contact.style";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import picture from "../../assets/home.jpg"
+import picture from "../../assets/home.jpg";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import { Grid, Box, Stack } from "@mui/material";
 
@@ -49,11 +50,13 @@ const Contact = () => {
             </StyledTypography>
             <Stack direction="row" spacing={2} mt={3}>
               <ContactBox>
-                <PhoneIphoneOutlinedIcon
-                  sx={{
-                    color: `${COLORS.CINNARBAR}`,
-                  }}
-                />
+                <StyledLink href="tel: +256786760482">
+                  <PhoneIphoneOutlinedIcon
+                    sx={{
+                      color: `${COLORS.CINNARBAR}`,
+                    }}
+                  />
+                </StyledLink>
                 <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
                   <StyledTypography variant="h6">
                     +256 786 760 482
@@ -61,11 +64,13 @@ const Contact = () => {
                 </StyledTypography>
               </ContactBox>
               <ContactBox>
-                <ChatBubbleOutlineOutlinedIcon
-                  sx={{
-                    color: `${COLORS.CINNARBAR}`,
-                  }}
-                />
+                <StyledLink href="mailto: smgmartinez92@gmail.com">
+                  <ChatBubbleOutlineOutlinedIcon
+                    sx={{
+                      color: `${COLORS.CINNARBAR}`,
+                    }}
+                  />
+                </StyledLink>
                 <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
                   <StyledTypography variant="h6">
                     smgmartinez92@gmail.com
@@ -84,7 +89,7 @@ const Contact = () => {
             marginBottom: "30px",
           }}
         >
-          <Box >
+          <Box>
             <img src={picture} alt="laptop" />
           </Box>
         </Grid>

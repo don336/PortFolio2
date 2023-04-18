@@ -135,7 +135,7 @@ export const StyledIconGithub = styled(IconGithub)`
   margin: auto;
   width: 40px;
   height: 40px;
-  color: #171515;
+  color: #ffff;
 `;
 export const StyledIconJest = styled(IconJest)`
   display: flex;

@@ -7,7 +7,7 @@ import {
   StyledLink,
 } from "./About.style";
 import resume from "../../assets/SsemugabiMartinFullStackDeveloper.pdf";
-import picture from "../../assets/pic2.jpg";
+import picture from "../../assets/pic2.png";
 import CustomButton from "../../Elements/CustomButton/CustomButton";
 import { COLORS } from "../../Styles/Theme";
 

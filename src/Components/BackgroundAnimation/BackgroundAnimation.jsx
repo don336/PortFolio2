@@ -1,5 +1,5 @@
 import React from "react";
-
+import picture from "../../assets/pic2.jpg";
 const BackgroundAnimation = () => (
   <div>
     <svg

@@ -11,8 +11,7 @@ const Home = () => {
     <Container
       style={{
         // background: "rgb(2,0,36)",
-        background:
-          "linear-gradient(0deg, rgba(4,4,8,1) 15%, rgba(1,5,10,0.773546918767507) 58%, rgba(8,13,25,1) 100%)",
+        background: "#1C1C1C",
         minHeight: "100vh",
       }}
       maxWidth="xl"
