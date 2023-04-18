@@ -8,7 +8,7 @@ import {
   ContactBox,
 } from "./Contact.style";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import picture from "../../assets/Home.jpg"
+import picture from "../../assets/home.jpg"
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import { Grid, Box, Stack } from "@mui/material";
 
