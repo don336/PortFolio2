@@ -7,13 +7,13 @@ import {
   StyledLink,
 } from "./About.style";
 import resume from "../../assets/SsemugabiMartinFullStackDeveloper.pdf";
-import picture from "../../assets/home.jpg";
+import picture from "../../assets/pic2.jpg";
 import CustomButton from "../../Elements/CustomButton/CustomButton";
 import { COLORS } from "../../Styles/Theme";
 
 const About = () => {
   return (
-    <StyledContainer>
+    <StyledContainer id="About">
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
@@ -67,7 +67,9 @@ const About = () => {
                   fontcolor={COLORS.LINEN}
                   background={COLORS.BLACKOLIVE}
                 >
-                  <Typography variant="w2">Hire</Typography>
+                  <StyledLink href="mailto:smgmartinez92@gmail.com">
+                    <Typography variant="w2">Hire</Typography>
+                  </StyledLink>
                 </CustomButton>
                 <CustomButton
                   fontcolor={COLORS.DARKGREY}

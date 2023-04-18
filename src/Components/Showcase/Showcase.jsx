@@ -1,12 +1,12 @@
 import { Grid, Typography, colors } from "@mui/material";
-import CustomButtom from "../../Elements/CustomButton/CustomButton";
+import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
 import { COLORS } from "../../Styles/Theme";
 import { StyledTypography, StyledBox, StyledContainer } from "./showcase.style";
 import home from "../../assets/pic2.jpg";
 
 const Showcase = () => {
   return (
-    <StyledContainer>
+    <StyledContainer id="Home">
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
@@ -21,7 +21,7 @@ const Showcase = () => {
             marginBottom: "30px",
           }}
         >
-          <img src={home} alt="img" width={300} className="img1" />
+          <BackgroundAnimation />
         </Grid>
         <Grid
           item
@@ -36,12 +36,17 @@ const Showcase = () => {
           {" "}
           <StyledBox>
             <Typography variant="h2" color={COLORS.LINEN}>
-              HELLO, I'M SSEMUGABI MARTIN.
+              HELLO THERE, WELCOME TO MY PORTFOLIO.
             </Typography>
             <Typography variant="h2" color={COLORS.LINEN}>
-              A SOFTWARE <span style={{
-                color: `${COLORS.CINNARBAR}`
-              }}>DEVELOPER</span>
+              FRONTEND{" "}
+              <span
+                style={{
+                  color: `${COLORS.CINNARBAR}`,
+                }}
+              >
+                DEVELOPER
+              </span>
             </Typography>
             <StyledTypography variant="h6">
               "Welcome to my portfolio! My name is Ssemugabi Martin, and I am a
