@@ -1,6 +1,6 @@
 import { createTheme } from "@mui/material";
 export const COLORS = {
-  CINNARBAR: "#9acd32",
+  CINNARBAR: "#01C38D",
   LINEN: "#FFEDDF",
   BLACKOLIVE: "#434A42",
   DARKGREY: "#1C1C1C",

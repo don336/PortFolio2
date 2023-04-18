@@ -5,6 +5,7 @@ import {
   Typography as muiTypography,
   Box as muiBox,
   Container as muiContainer,
+  Link,
 } from "@mui/material";
 
 export const ContactBox = styled(muiBox)`
@@ -18,6 +19,7 @@ export const ContactBox = styled(muiBox)`
   padding: 10px;
   height: 150px;
   width: 200px;
+  
 `;
 export const StyledContainer = styled(muiContainer)`
   margin-top: 50px;
@@ -49,7 +51,11 @@ export const StyledBox = styled(muiBox)`
   height: 400px;
 `;
 export const StyledTextarea = styled(TextareaAutosize)`
-   width: 100%;
-   border-radius: 5px;
-   background: ${COLORS.DARKGREY};
+  width: 100%;
+  border-radius: 5px;
+  background: ${COLORS.DARKGREY};
+`;
+export const StyledLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
 `;

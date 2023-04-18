@@ -3,7 +3,8 @@ import MenuIcon from "@mui/icons-material/Menu";
 import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
-import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
+import LinkedIn from "@mui/icons-material/LinkedIn";
 import { Box, SwipeableDrawer, Stack, Typography } from "@mui/material";
 import {
   StyledList,
@@ -15,6 +16,8 @@ import {
   SideBox,
 } from "./Navbar.style";
 import { COLORS } from "../../Styles/Theme";
+import { GitHub } from "@mui/icons-material";
+// import { LinkedIn } from "@mui/icons-material";
 
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
@@ -57,7 +60,12 @@ export default function SwipeableTemporaryDrawer() {
       {["left"].map((anchor) => (
         <React.Fragment key={anchor}>
           <StyledButton onClick={toggleDrawer(anchor, true)}>
-            <MenuIcon />
+            <MenuIcon
+              sx={{
+                top: "0",
+                position: "fixed",
+              }}
+            />
           </StyledButton>
           <SwipeableDrawer
             anchor={anchor}
@@ -88,13 +96,16 @@ export default function SwipeableTemporaryDrawer() {
                   sx={{ justifyContent: "center" }}
                 >
                   <Item>
-                    <FacebookOutlinedIcon />
+                    <GitHub />
+                  </Item>
+                  <Item>
+                    <LinkedIn />
                   </Item>
                   <Item href="mailto:smgmartinez92@gmail.com">
                     <EmailOutlinedIcon />
                   </Item>
-                  <Item>
-                    <ChatBubbleOutlineOutlinedIcon />
+                  <Item href="tel: +256786760482">
+                    <PhoneIphoneOutlinedIcon />
                   </Item>
                 </Stack>
                 <StyledTypography variant="h6">

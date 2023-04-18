@@ -36,20 +36,11 @@ const Showcase = () => {
           {" "}
           <StyledBox>
             <Typography variant="h2" color={COLORS.LINEN}>
-              HELLO THERE, WELCOME TO MY PORTFOLIO.
-            </Typography>
-            <Typography variant="h2" color={COLORS.LINEN}>
-              FRONTEND{" "}
-              <span
-                style={{
-                  color: `${COLORS.CINNARBAR}`,
-                }}
-              >
-                DEVELOPER
-              </span>
+              HELLO THERE, WELCOME TO MY{" "}
+              <span className="primary">PORTFOLIO.</span>
             </Typography>
             <StyledTypography variant="h6">
-              "Welcome to my portfolio! My name is Ssemugabi Martin, and I am a
+              "My name is Ssemugabi Martin, and I am a
               passionate frontend developer. With a one year of experience in
               web development, I have honed my skills in creating dynamic and
               engaging user interfaces that deliver seamless user experiences".

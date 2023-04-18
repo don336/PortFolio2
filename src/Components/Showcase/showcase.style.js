@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { COLORS } from "../../Styles/Theme";
+import Picture from "../../assets/pic2.jpg"
 import {
   Typography as muiTypography,
   Box as muiBox,
@@ -17,12 +18,6 @@ export const StyledBox = styled(muiBox)`
   align-items: center;
   margin: auto;
   flex-direction: column;
-  background: linear-gradient(
-    0deg,
-    rgba(4, 4, 8, 1) 15%,
-    rgba(1, 5, 10, 0.773546918767507) 58%,
-    rgba(8, 13, 25, 1) 100%
-  );
   border-radius: 15px;
   padding: 10px;
   height: 550px;
@@ -35,4 +30,5 @@ export const StyledContainer = styled(muiContainer)`
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
+  background-image: ${Picture};
 `;
