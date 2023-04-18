@@ -4,14 +4,15 @@ import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
 import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
-import { Box, SwipeableDrawer, Button, Stack, Typography } from "@mui/material";
+import { Box, SwipeableDrawer, Stack, Typography } from "@mui/material";
 import {
   StyledList,
   StyledLink,
   StyledTypography,
   StyledBox,
   Item,
-  StyledButton
+  StyledButton,
+  SideBox,
 } from "./Navbar.style";
 import { COLORS } from "../../Styles/Theme";
 
@@ -31,7 +32,7 @@ export default function SwipeableTemporaryDrawer() {
 
     setState({ ...state, [anchor]: open });
   };
-
+  const pages = ["Home", "About", "Services", "Contact"];
   const list = (anchor) => (
     <Box
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 200 }}
@@ -40,18 +41,13 @@ export default function SwipeableTemporaryDrawer() {
       onKeyDown={toggleDrawer(anchor, false)}
     >
       <StyledList>
-        <StyledLink to="/">
-          <StyledTypography variant="w1">Home</StyledTypography>
-        </StyledLink>
-        <StyledLink to="/about">
-          <StyledTypography variant="w1">About</StyledTypography>
-        </StyledLink>
-        <StyledLink to="/services">
-          <StyledTypography variant="w1">Services</StyledTypography>
-        </StyledLink>
-        <StyledLink to="/contact">
-          <StyledTypography variant="w1">Contact</StyledTypography>
-        </StyledLink>
+        {pages.map((page) => {
+          return (
+            <StyledLink href={`#${page}`}>
+              <StyledTypography variant="w1">{page}</StyledTypography>
+            </StyledLink>
+          );
+        })}
       </StyledList>
     </Box>
   );
@@ -69,14 +65,9 @@ export default function SwipeableTemporaryDrawer() {
             onClose={toggleDrawer(anchor, false)}
             onOpen={toggleDrawer(anchor, true)}
           >
-            <Box
-              sx={{
-                backgroundColor: "#333",
-                height: "100vh",
-              }}
-            >
+            <SideBox>
               <StyledBox>
-                <Typography variant="h1" color={COLORS.CINNARBAR} >
+                <Typography variant="h1" color={COLORS.CINNARBAR}>
                   <SpaOutlinedIcon
                     style={{
                       color: `${COLORS.CINNARBAR}`,
@@ -99,16 +90,18 @@ export default function SwipeableTemporaryDrawer() {
                   <Item>
                     <FacebookOutlinedIcon />
                   </Item>
-                  <Item>
+                  <Item href="mailto:smgmartinez92@gmail.com">
                     <EmailOutlinedIcon />
                   </Item>
                   <Item>
                     <ChatBubbleOutlineOutlinedIcon />
                   </Item>
                 </Stack>
-                <StyledTypography variant="h6">&copy; 2023 All Rights Reserved</StyledTypography>
+                <StyledTypography variant="h6">
+                  &copy; 2023 All Rights Reserved
+                </StyledTypography>
               </Box>
-            </Box>
+            </SideBox>
           </SwipeableDrawer>
         </React.Fragment>
       ))}

@@ -7,15 +7,14 @@ import {
   StyledBox,
   ContactBox,
 } from "./Contact.style";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
+import picture from "../../assets/Home.jpg"
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import { Grid, Box, Stack } from "@mui/material";
 
 const Contact = () => {
   return (
-    <StyledContainer>
+    <StyledContainer id="Contact">
       <BorderBox>
         <StyledTypography
           variant="h2"
@@ -48,6 +47,32 @@ const Contact = () => {
               get back to you as soon as possible. Alternatively, you can reach
               me via email at smgmartinez92@gmail.com. Thank you!"
             </StyledTypography>
+            <Stack direction="row" spacing={2} mt={3}>
+              <ContactBox>
+                <PhoneIphoneOutlinedIcon
+                  sx={{
+                    color: `${COLORS.CINNARBAR}`,
+                  }}
+                />
+                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
+                  <StyledTypography variant="h6">
+                    +256 786 760 482
+                  </StyledTypography>
+                </StyledTypography>
+              </ContactBox>
+              <ContactBox>
+                <ChatBubbleOutlineOutlinedIcon
+                  sx={{
+                    color: `${COLORS.CINNARBAR}`,
+                  }}
+                />
+                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
+                  <StyledTypography variant="h6">
+                    smgmartinez92@gmail.com
+                  </StyledTypography>
+                </StyledTypography>
+              </ContactBox>
+            </Stack>
           </StyledBox>
         </Grid>
         <Grid
@@ -59,48 +84,8 @@ const Contact = () => {
             marginBottom: "30px",
           }}
         >
-          <Box sx={{ mt: 3 }}>
-            <Stack direction="row" spacing={2} mt={3}>
-              <ContactBox>
-                <PhoneIphoneOutlinedIcon
-                  sx={{
-                    color: `${COLORS.CINNARBAR}`,
-                  }}
-                />
-                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
-                  PHONE
-                  <StyledTypography variant="h6">
-                    +256 786 760 482
-                  </StyledTypography>
-                </StyledTypography>
-              </ContactBox>
-              <ContactBox>
-                <EmailOutlinedIcon
-                  sx={{
-                    color: `${COLORS.CINNARBAR}`,
-                  }}
-                />
-                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
-                  EMAIL
-                  <StyledTypography variant="h6">
-                    smgmartinez92@gmail.com
-                  </StyledTypography>
-                </StyledTypography>
-              </ContactBox>
-              <ContactBox>
-                <ChatBubbleOutlineOutlinedIcon
-                  sx={{
-                    color: `${COLORS.CINNARBAR}`,
-                  }}
-                />
-                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
-                  EMAIL
-                  <StyledTypography variant="h6">
-                    smgmartinez92@gmail.com
-                  </StyledTypography>
-                </StyledTypography>
-              </ContactBox>
-            </Stack>
+          <Box >
+            <img src={picture} alt="laptop" />
           </Box>
         </Grid>
       </Grid>

@@ -51,13 +51,17 @@ export const StyledCard = styled(muiCard)`
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  background: ${COLORS.GREY};
+  background: linear-gradient(
+    0deg,
+    rgba(4, 4, 8, 1) 15%,
+    rgba(1, 5, 10, 0.773546918767507) 58%,
+    rgba(8, 13, 25, 1) 100%
+  );
   border-left: 3px solid ${COLORS.CINNARBAR};
   height: 200px;
   &:hover {
     cursor: pointer;
-    box-shadow: ${({ boxshadow }) =>
-      boxshadow ? "0rem 0.375rem 0.375rem rgba(0, 0, 0, 0.32)" : "auto"};
+    box-shadow: 5px 5px 5px 5px ${COLORS.DARKGREY};
     color: ${({ hovercolor }) => hovercolor || COLORS.CINNARBAR};
     border-radius: 5px;
   }

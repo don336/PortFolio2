@@ -3,7 +3,7 @@ export const COLORS = {
   CINNARBAR: "#9acd32",
   LINEN: "#FFEDDF",
   BLACKOLIVE: "#434A42",
-  DARKGREY: "#333",
+  DARKGREY: "#1C1C1C",
   GREY: "#3a3a3a",
 };
 
