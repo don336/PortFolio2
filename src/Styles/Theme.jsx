@@ -10,12 +10,12 @@ export const COLORS = {
 export const FONT = {
   // Define available font-families to be used throughout the app
   FAMILY: {
-    ROBOTO: ["Roboto", "sans-serif"].join(","),
+    ROBOTO: ["Roboto Slab", "serif"].join(","),
   },
   LINE_HEIGHT: "136.4%",
   // Define font weights that would be used throughout the app
   WEIGHT: {
-    LIGHT: 300,
+    LIGHT: 100,
     REGULAR: 400,
     MEDIUM: 500,
     SEMIBOLD: 600,
@@ -85,12 +85,12 @@ export const theme = createTheme({
     h5: {
       fontSize: FONT.SIZES[16],
       lineHeight: FONT.LINE_HEIGHT[26],
-      fontWeight: FONT.WEIGHT.REGULAR,
+      fontWeight: FONT.WEIGHT.LIGHT,
     },
     h6: {
       fontSize: FONT.SIZES[12],
       lineHeight: FONT.LINE_HEIGHTS[26],
-      fontWeight: FONT.WEIGHT.REGULAR,
+      fontWeight: FONT.WEIGHT.LIGHT,
     },
     h7: {
       fontSize: FONT.SIZES[48],
