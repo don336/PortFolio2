@@ -37,8 +37,8 @@ export const ContactBox = styled(muiBox)`
   background: #3a3a3a;
   border-radius: 15px;
   padding: 10px;
-  height: 150px;
-  width: 200px;
+  height: 120px;
+  width: 100px;
 `;
 
 export const StyledLink = styled(Link)`

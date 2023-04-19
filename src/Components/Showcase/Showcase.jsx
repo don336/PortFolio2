@@ -2,7 +2,6 @@ import { Grid, Typography, colors } from "@mui/material";
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
 import { COLORS } from "../../Styles/Theme";
 import { StyledTypography, StyledBox, StyledContainer } from "./showcase.style";
-import home from "../../assets/pic2.jpg";
 
 const Showcase = () => {
   return (
@@ -40,10 +39,10 @@ const Showcase = () => {
               <span className="primary">PORTFOLIO.</span>
             </Typography>
             <StyledTypography variant="h6">
-              "My name is Ssemugabi Martin, and I am a
-              passionate frontend developer. With a one year of experience in
-              web development, I have honed my skills in creating dynamic and
-              engaging user interfaces that deliver seamless user experiences".
+              "My name is Ssemugabi Martin, and I am a passionate frontend
+              developer. With a one year of experience in web development, I
+              have honed my skills in creating dynamic and engaging user
+              interfaces that deliver seamless user experiences".
             </StyledTypography>
           </StyledBox>
         </Grid>

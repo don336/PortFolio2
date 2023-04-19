@@ -27,6 +27,10 @@ export const StyledTypography = styled(muiTypography)`
   color: ${COLORS.LINEN};
   padding: 10px;
   line-height: 1rem;
+  &:hover {
+    cursor: pointer;
+    color: ${({ hovercolor }) => hovercolor || COLORS.CINNARBAR};
+  }
 `;
 export const StyledBox = styled(muiBox)`
   text-align: center;
@@ -41,11 +45,8 @@ export const Item = styled(Link)`
   padding: 5px;
   &:hover {
     cursor: pointer;
-    box-shadow: ${({ boxshadow }) =>
-      boxshadow ? "0rem 0.375rem 0.375rem rgba(0, 0, 0, 0.32)" : "auto"};
     color: ${({ hovercolor }) => hovercolor || COLORS.DARKGREY};
     border-radius: 5px;
-    left: 6px;
   }
 `;
 
@@ -54,6 +55,7 @@ export const StyledButton = styled(muiButton)`
   &:hover {
     cursor: pointer;
     color: ${({ hovercolor }) => hovercolor || "#333"};
+    background: none;
   }
 `;
 
