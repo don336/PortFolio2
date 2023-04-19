@@ -61,7 +61,7 @@ export const StyledCard = styled(muiCard)`
   height: 200px;
   &:hover {
     cursor: pointer;
-    box-shadow: 5px 5px 5px 5px ${COLORS.DARKGREY};
+    box-shadow: 5px 5px 5px 5px ${COLORS.CINNARBAR};
     color: ${({ hovercolor }) => hovercolor || COLORS.CINNARBAR};
     border-radius: 5px;
   }

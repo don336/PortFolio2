@@ -47,7 +47,7 @@ export default function SwipeableTemporaryDrawer() {
         {pages.map((page) => {
           return (
             <StyledLink href={`#${page}`}>
-              <StyledTypography variant="w1">{page}</StyledTypography>
+              <StyledTypography variant="h6">{page}</StyledTypography>
             </StyledLink>
           );
         })}
@@ -95,10 +95,10 @@ export default function SwipeableTemporaryDrawer() {
                   mt={20}
                   sx={{ justifyContent: "center" }}
                 >
-                  <Item>
+                  <Item href="https://github.com/don336">
                     <GitHub />
                   </Item>
-                  <Item>
+                  <Item href="https://www.linkedin.com/in/ssemugabi-martin-4010101b9">
                     <LinkedIn />
                   </Item>
                   <Item href="mailto:smgmartinez92@gmail.com">

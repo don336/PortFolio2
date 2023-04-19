@@ -94,7 +94,7 @@ const About = () => {
             marginBottom: "30px",
           }}
         >
-          <img src={picture} alt="Profile" loading="lazy" />
+          <img src={picture} alt="Profile" loading="lazy" className="img1"/>
         </Grid>
       </Grid>
     </StyledContainer>
