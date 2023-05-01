@@ -7,6 +7,7 @@ import {
   StyledBox,
   ContactBox,
   StyledLink,
+  StyledGridItem,
 } from "./Contact.style";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import picture from "../../assets/home.jpg";
@@ -44,7 +45,7 @@ const Contact = () => {
             <StyledTypography variant="h3">Get in Touch</StyledTypography>
             <StyledTypography variant="h6">
               "Thank you for your interest in my work! I would love to hear from
-              you. Please use the form below to send me a message, and I will
+              you. Please use the mail below to send me a message, and I will
               get back to you as soon as possible. Alternatively, you can reach
               me via email at smgmartinez92@gmail.com. Thank you!"
             </StyledTypography>
@@ -80,7 +81,7 @@ const Contact = () => {
             </Stack>
           </StyledBox>
         </Grid>
-        <Grid
+        <StyledGridItem
           item
           xs={1}
           sm={2}
@@ -92,7 +93,7 @@ const Contact = () => {
           <Box>
             <img src={picture} alt="laptop" />
           </Box>
-        </Grid>
+        </StyledGridItem>
       </Grid>
     </StyledContainer>
   );

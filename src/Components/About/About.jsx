@@ -3,7 +3,6 @@ import {
   StyledContainer,
   StyledTypography,
   BorderBox,
-
   StyledLink,
 } from "./About.style";
 import resume from "../../assets/SsemugabiMartinFullStackDeveloper.pdf";
@@ -40,11 +39,11 @@ const About = () => {
           </BorderBox>
           <Box>
             <StyledTypography variant="h5">
-              Hey There, My name is Ssemugabi Martin. As a frontend developer, I
-              believe that design and functionality should always go hand in
-              hand. That's why I'm dedicated to creating web applications that
-              not only look beautiful but also provide a high level of
-              functionality and interactivity.
+              Hey There, My name is Martin. As a frontend developer, I believe
+              that design and functionality should always go hand in hand.
+              That's why I'm dedicated to creating web applications that not
+              only look beautiful but also provide a high level of functionality
+              and interactivity.
             </StyledTypography>{" "}
             <StyledTypography variant="h5">
               I have worked on various projects using technologies such as HTML,
@@ -61,16 +60,7 @@ const About = () => {
             </StyledTypography>
           </Box>
           <Box>
-            <Box>
-              <Stack direction="row" spacing={2}>
-                <CustomButton
-                  fontcolor={COLORS.LINEN}
-                  background={COLORS.BLACKOLIVE}
-                >
-                  <StyledLink href="mailto:smgmartinez92@gmail.com">
-                    <Typography variant="w2">Hire</Typography>
-                  </StyledLink>
-                </CustomButton>
+            <Box ml={1}>
                 <CustomButton
                   fontcolor={COLORS.DARKGREY}
                   sx={{
@@ -81,7 +71,6 @@ const About = () => {
                     Download Resume
                   </StyledLink>
                 </CustomButton>
-              </Stack>
             </Box>
           </Box>
         </Grid>
@@ -94,7 +83,7 @@ const About = () => {
             marginBottom: "30px",
           }}
         >
-          <img src={picture} alt="Profile" loading="lazy" className="img1"/>
+          <img src={picture} alt="Profile" loading="lazy" className="img1" />
         </Grid>
       </Grid>
     </StyledContainer>

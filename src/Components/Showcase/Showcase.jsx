@@ -1,7 +1,12 @@
 import { Grid, Typography, colors } from "@mui/material";
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
 import { COLORS } from "../../Styles/Theme";
-import { StyledTypography, StyledBox, StyledContainer } from "./showcase.style";
+import {
+  StyledTypography,
+  StyledBox,
+  StyledContainer,
+  StyledGridItem,
+} from "./showcase.style";
 
 const Showcase = () => {
   return (
@@ -11,7 +16,7 @@ const Showcase = () => {
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 1, sm: 2, md: 4 }}
       >
-        <Grid
+        <StyledGridItem
           item
           xs={1}
           sm={2}
@@ -21,7 +26,7 @@ const Showcase = () => {
           }}
         >
           <BackgroundAnimation />
-        </Grid>
+        </StyledGridItem>
         <Grid
           item
           xs={1}
@@ -34,15 +39,11 @@ const Showcase = () => {
         >
           {" "}
           <StyledBox>
-            <Typography variant="h2" color={COLORS.LINEN}>
-              HELLO THERE, WELCOME TO MY{" "}
-              <span className="primary">PORTFOLIO.</span>
+            <Typography variant="h1" color={COLORS.LINEN}>
+              <span className="primary">HELLO THERE</span>,
             </Typography>
-            <StyledTypography variant="h6">
-              "My name is Ssemugabi Martin, and I am a passionate frontend
-              developer. With a one year of experience in web development, I
-              have honed my skills in creating dynamic and engaging user
-              interfaces that deliver seamless user experiences".
+            <StyledTypography variant="h5" color={COLORS.LINEN}>
+              I simplify the complex.
             </StyledTypography>
           </StyledBox>
         </Grid>

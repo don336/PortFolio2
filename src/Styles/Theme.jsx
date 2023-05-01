@@ -9,8 +9,9 @@ export const COLORS = {
 
 export const FONT = {
   // Define available font-families to be used throughout the app
+  // font-family: 'Montserrat', sans-serif;
   FAMILY: {
-    ROBOTO: ["Roboto Slab", "serif"].join(","),
+    ROBOTO: ["Montserrat", "sans-serif"].join(","),
   },
   LINE_HEIGHT: "136.4%",
   // Define font weights that would be used throughout the app

@@ -43,7 +43,7 @@ export const ContactBox = styled(muiBox)`
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
-  color: #fff;
+  color: #333;
   font-weight: 700;
   &:hover {
     cursor: pointer;

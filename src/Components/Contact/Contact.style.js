@@ -6,6 +6,7 @@ import {
   Box as muiBox,
   Container as muiContainer,
   Link,
+  Grid,
 } from "@mui/material";
 
 export const ContactBox = styled(muiBox)`
@@ -19,7 +20,6 @@ export const ContactBox = styled(muiBox)`
   padding: 10px;
   height: 150px;
   width: 200px;
-  
 `;
 export const StyledContainer = styled(muiContainer)`
   margin-top: 50px;
@@ -58,4 +58,10 @@ export const StyledTextarea = styled(TextareaAutosize)`
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
+`;
+
+export const StyledGridItem = styled(Grid)`
+  @media screen and (max-width: 700px) {
+   display: none;
+  }
 `;
