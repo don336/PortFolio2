@@ -49,7 +49,7 @@ const Contact = () => {
               get back to you as soon as possible. Alternatively, you can reach
               me via email at smgmartinez92@gmail.com. Thank you!"
             </StyledTypography>
-            <Stack direction={{ xs: "column", sm: "row" }} spacing={2} mt={3}>
+            <Stack direction="row" spacing={2} mt={3}>
               <ContactBox>
                 <StyledLink href="tel: +256786760482">
                   <PhoneIphoneOutlinedIcon

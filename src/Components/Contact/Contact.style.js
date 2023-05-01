@@ -20,6 +20,12 @@ export const ContactBox = styled(muiBox)`
   padding: 10px;
   height: 150px;
   width: 200px;
+  @media screen and (max-width: 700px) {
+    padding: 5px;
+    height: 100px;
+    width: 150px;
+    background: none;
+  }
 `;
 export const StyledContainer = styled(muiContainer)`
   margin-top: 50px;
@@ -28,6 +34,9 @@ export const StyledContainer = styled(muiContainer)`
 export const StyledTypography = styled(muiTypography)`
   color: ${COLORS.LINEN};
   padding: 10px;
+  @media screen and (max-width: 700px) {
+    padding: 5px;
+  }
 `;
 
 export const BorderBox = styled(muiBox)`
@@ -49,6 +58,10 @@ export const StyledBox = styled(muiBox)`
   border-radius: 15px;
   padding: 10px;
   height: 400px;
+  @media screen and (max-width: 700px) {
+    width: 340px;
+    margin-right: 5px;
+  }
 `;
 export const StyledTextarea = styled(TextareaAutosize)`
   width: 100%;
