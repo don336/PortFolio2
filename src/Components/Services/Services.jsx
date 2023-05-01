@@ -16,7 +16,7 @@ import {
 } from "./Services.style";
 const Services = () => {
   return (
-    <Container id="Services">
+    <Container id="Skills">
       <Box>
         <BorderBox>
           <StyledTypography
@@ -38,7 +38,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconReact />
-              <StyledTypography variant="h4">REACT</StyledTypography>
+              <StyledTypography variant="h6">REACT</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -46,7 +46,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconExpress />
-              <StyledTypography variant="h4">EXPRESS</StyledTypography>
+              <StyledTypography variant="h6">EXPRESS</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -54,7 +54,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconNode />
-              <StyledTypography variant="h4">NODE.JS</StyledTypography>
+              <StyledTypography variant="h6">NODE.JS</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -62,7 +62,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconMongoDb />
-              <StyledTypography variant="h4">MONGO DB</StyledTypography>
+              <StyledTypography variant="h6">MONGO DB</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -70,7 +70,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconMui />
-              <StyledTypography variant="h4">MATERIAL UI</StyledTypography>
+              <StyledTypography variant="h6">MATERIAL UI</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -78,7 +78,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconRedux />
-              <StyledTypography variant="h4">REDUX</StyledTypography>
+              <StyledTypography variant="h6">REDUX</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -86,7 +86,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconJest />
-              <StyledTypography variant="h4">JEST</StyledTypography>
+              <StyledTypography variant="h6">JEST</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -94,7 +94,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconGithub />
-              <StyledTypography variant="h4">GITHUB</StyledTypography>
+              <StyledTypography variant="h6">GITHUB</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>
@@ -102,7 +102,7 @@ const Services = () => {
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconGit />
-              <StyledTypography variant="h4">GIT</StyledTypography>
+              <StyledTypography variant="h6">GIT</StyledTypography>
             </CardContent>
           </StyledCard>
         </Grid>

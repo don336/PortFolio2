@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar/Navbar";
 import Showcase from "../Components/Showcase/Showcase";
 import About from "../Components/About/About";
 import Services from "../Components/Services/Services";
+import Projects from "../Components/Projects/projects";
 import Contact from "../Components/Contact/Contact";
 
 const Home = () => {
@@ -20,6 +21,7 @@ const Home = () => {
       <Showcase />
       <About />
       <Services />
+      <Projects />
       <Contact />
     </Container>
   );

@@ -58,10 +58,10 @@ export const StyledCard = styled(muiCard)`
     rgba(8, 13, 25, 1) 100%
   );
   border-left: 3px solid ${COLORS.CINNARBAR};
-  height: 200px;
+  height: 150px;
   &:hover {
     cursor: pointer;
-    box-shadow: 5px 5px 5px 5px ${COLORS.CINNARBAR};
+    box-shadow: 5px 5px 5px 5px #000;
     color: ${({ hovercolor }) => hovercolor || COLORS.CINNARBAR};
     border-radius: 5px;
   }

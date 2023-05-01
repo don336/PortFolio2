@@ -8,9 +8,9 @@ import {
 } from "@mui/material";
 
 export const StyledTypography = styled(muiTypography)`
+  postion: absolute;
   color: ${COLORS.LINEN};
-  padding: 10px;
-  text-align: center;
+  margin-left: 150px
 `;
 export const StyledBox = styled(muiBox)`
   display: flex;
