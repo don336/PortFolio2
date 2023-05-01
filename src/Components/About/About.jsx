@@ -39,7 +39,7 @@ const About = () => {
           </BorderBox>
           <Box>
             <StyledTypography variant="h5">
-              Hey There, My name is Martin. As a frontend developer, I believe
+              My name is Ssemugabi Martin. As a frontend developer, I believe
               that design and functionality should always go hand in hand.
               That's why I'm dedicated to creating web applications that not
               only look beautiful but also provide a high level of functionality
@@ -61,16 +61,16 @@ const About = () => {
           </Box>
           <Box>
             <Box ml={1}>
-                <CustomButton
-                  fontcolor={COLORS.DARKGREY}
-                  sx={{
-                    fontWeight: "700",
-                  }}
-                >
-                  <StyledLink href={resume} download>
-                    Download Resume
-                  </StyledLink>
-                </CustomButton>
+              <CustomButton
+                fontcolor={COLORS.DARKGREY}
+                sx={{
+                  fontWeight: "700",
+                }}
+              >
+                <StyledLink href={resume} download>
+                  Download Resume
+                </StyledLink>
+              </CustomButton>
             </Box>
           </Box>
         </Grid>
