@@ -1,7 +1,12 @@
 import { Grid, Typography, colors } from "@mui/material";
 import BackgroundAnimation from "../BackgroundAnimation/BackgroundAnimation";
 import { COLORS } from "../../Styles/Theme";
-import { StyledTypography, StyledBox, StyledContainer } from "./showcase.style";
+import {
+  StyledTypography,
+  StyledBox,
+  StyledContainer,
+  StyledGridItem,
+} from "./showcase.style";
 
 const Showcase = () => {
   return (
@@ -11,7 +16,7 @@ const Showcase = () => {
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 1, sm: 2, md: 4 }}
       >
-        <Grid
+        <StyledGridItem
           item
           xs={1}
           sm={2}
@@ -21,7 +26,7 @@ const Showcase = () => {
           }}
         >
           <BackgroundAnimation />
-        </Grid>
+        </StyledGridItem>
         <Grid
           item
           xs={1}

@@ -1,5 +1,6 @@
 #root {
   color: black;
+  background: #1c1c1c;
   flex-direction: column;
 }
 
@@ -10,21 +11,19 @@
   color: #333;
 }
 .primary {
-  color: #01C38D;
+  color: #01c38d;
 }
 
 .img1 {
   border-radius: 17px;
   height: 400px;
   width: 100%;
-  
 }
 img {
   border-radius: 15px;
   height: 400px;
   width: 500px;
   object-fit: cover;
-  
 }
 
 @media screen and (max-width: 500px) {

@@ -1,16 +1,17 @@
 import styled from "@emotion/styled";
 import { COLORS } from "../../Styles/Theme";
-import Picture from "../../assets/pic2.jpg"
+import Picture from "../../assets/pic2.jpg";
 import {
   Typography as muiTypography,
   Box as muiBox,
   Container as muiContainer,
+  Grid,
 } from "@mui/material";
 
 export const StyledTypography = styled(muiTypography)`
   postion: absolute;
   color: ${COLORS.LINEN};
-  margin-left: 150px
+  margin-left: 150px;
 `;
 export const StyledBox = styled(muiBox)`
   display: flex;
@@ -31,4 +32,9 @@ export const StyledContainer = styled(muiContainer)`
   margin-top: 50px;
   margin-bottom: 50px;
   background-image: ${Picture};
+`;
+export const StyledGridItem = styled(Grid)`
+  @media screen and (max-width: 700px) {
+    display: none;
+  }
 `;

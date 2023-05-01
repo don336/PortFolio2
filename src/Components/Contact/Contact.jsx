@@ -7,6 +7,7 @@ import {
   StyledBox,
   ContactBox,
   StyledLink,
+  StyledGridItem,
 } from "./Contact.style";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import picture from "../../assets/home.jpg";
@@ -80,7 +81,7 @@ const Contact = () => {
             </Stack>
           </StyledBox>
         </Grid>
-        <Grid
+        <StyledGridItem
           item
           xs={1}
           sm={2}
@@ -92,7 +93,7 @@ const Contact = () => {
           <Box>
             <img src={picture} alt="laptop" />
           </Box>
-        </Grid>
+        </StyledGridItem>
       </Grid>
     </StyledContainer>
   );
