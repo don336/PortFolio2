@@ -9,7 +9,7 @@ import ProjectPreview from "./card";
 
 const projects = () => {
   return (
-    <StyledContainer>
+    <StyledContainer id="Projects">
       <StyledBox>
         <BorderBox>
           <StyledTypography variant="h2">PROJECTS</StyledTypography>
