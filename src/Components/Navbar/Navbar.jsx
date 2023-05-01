@@ -95,10 +95,13 @@ export default function SwipeableTemporaryDrawer() {
                   mt={20}
                   sx={{ justifyContent: "center" }}
                 >
-                  <Item href="https://github.com/don336">
+                  <Item href="https://github.com/don336" target="blank">
                     <GitHub />
                   </Item>
-                  <Item href="https://www.linkedin.com/in/ssemugabi-martin-4010101b9">
+                  <Item
+                    href="https://www.linkedin.com/in/ssemugabi-martin-4010101b9"
+                    target="blank"
+                  >
                     <LinkedIn />
                   </Item>
                   <Item href="mailto:smgmartinez92@gmail.com">
