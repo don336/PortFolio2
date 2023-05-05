@@ -5,8 +5,8 @@ import {
   BorderBox,
   StyledLink,
 } from "./About.style";
-import resume from "../../assets/SsemugabiMartinFullStackDeveloper.pdf";
-import picture from "../../assets/pic2.png";
+import resume from "../../assets/Resume.pdf";
+import picture from "../../assets/pic5.jpg";
 import CustomButton from "../../Elements/CustomButton/CustomButton";
 import { COLORS } from "../../Styles/Theme";
 
