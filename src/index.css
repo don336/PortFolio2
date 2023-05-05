@@ -18,6 +18,7 @@
   border-radius: 17px;
   height: 400px;
   width: 100%;
+  object-fit: contain;
 }
 img {
   border-radius: 15px;
