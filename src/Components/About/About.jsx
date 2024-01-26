@@ -1,4 +1,4 @@
-import { Box, Grid, Stack, Typography } from "@mui/material";
+import { Box, Grid, } from "@mui/material";
 import {
   StyledContainer,
   StyledTypography,
@@ -82,8 +82,13 @@ const About = () => {
           sx={{
             marginBottom: "30px",
           }}
+            data-aos-delay="1500"
+            data-aos="fade-right"
+            data-aos-once="true"
+            className="profilePicture"
         >
-          <img src={picture} alt="Profile" loading="lazy" className="img1" />
+           <img src={picture} alt="Profile" loading="lazy" className="img1" />
+         
         </Grid>
       </Grid>
     </StyledContainer>

@@ -26,7 +26,12 @@ img {
   width: 500px;
   object-fit: cover;
 }
-
+.profile-image {
+  padding-top: 5rem;
+  max-width: 20rem;
+  max-height: 20rem;
+  margin-top: 8rem;
+}
 @media screen and (max-width: 500px) {
   img {
     border-radius: 15px;
