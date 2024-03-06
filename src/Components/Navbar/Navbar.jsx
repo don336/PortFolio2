@@ -17,8 +17,6 @@ import {
 } from "./Navbar.style";
 import { COLORS } from "../../Styles/Theme";
 import { GitHub } from "@mui/icons-material";
-// import { LinkedIn } from "@mui/icons-material";
-
 export default function SwipeableTemporaryDrawer() {
   const [state, setState] = React.useState({
     left: false,
