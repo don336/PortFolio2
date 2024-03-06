@@ -1,10 +1,10 @@
 import styled from "@emotion/styled";
 import { COLORS } from "../../Styles/Theme";
 import {
-  Typography as muiTypography,
-  Box as muiBox,
-  Container as muiContainer,
-  Card as muiCard,
+  Typography as MuiTypography,
+  Box as MuiBox,
+  Container as MuiContainer,
+  Card as MuiCard,
 } from "@mui/material";
 import {
   IconReact,
@@ -18,22 +18,24 @@ import {
   IconJest,
 } from "./util";
 
-export const StyledTypography = styled(muiTypography)`
+export const StyledTypography = styled(MuiTypography)`
   color: ${COLORS.LINEN};
   padding: 10px;
 `;
-export const StyledBox = styled(muiBox)`
+
+export const StyledBox = styled(MuiBox)`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   flex-direction: column;
-  background: #3a3a3a;
+  background: ${COLORS.DARKGREY};
   border-radius: 15px;
   padding: 10px;
   height: 400px;
 `;
-export const StyledContainer = styled(muiContainer)`
+
+export const StyledContainer = styled(MuiContainer)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -42,21 +44,18 @@ export const StyledContainer = styled(muiContainer)`
   margin-top: 50px;
   margin-bottom: 150px;
 `;
-export const BorderBox = styled(muiBox)`
+
+export const BorderBox = styled(MuiBox)`
   border-left: 3px solid ${COLORS.CINNARBAR};
 `;
-export const StyledCard = styled(muiCard)`
+
+export const StyledCard = styled(MuiCard)`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  background: linear-gradient(
-    0deg,
-    rgba(4, 4, 8, 1) 15%,
-    rgba(1, 5, 10, 0.773546918767507) 58%,
-    rgba(8, 13, 25, 1) 100%
-  );
+  background: #132c38;
   border-left: 3px solid ${COLORS.CINNARBAR};
   height: 150px;
   &:hover {
@@ -77,6 +76,7 @@ export const StyledIconReact = styled(IconReact)`
   height: 40px;
   color: #7cc5d9;
 `;
+
 export const StyledIconMongoDb = styled(IconBxlMongodb)`
   display: flex;
   flex-direction: column;
@@ -87,6 +87,7 @@ export const StyledIconMongoDb = styled(IconBxlMongodb)`
   height: 40px;
   color: #4daa57;
 `;
+
 export const StyledIconNode = styled(IconNodeJs)`
   display: flex;
   flex-direction: column;
@@ -97,6 +98,7 @@ export const StyledIconNode = styled(IconNodeJs)`
   height: 40px;
   color: #4daa57;
 `;
+
 export const StyledIconRedux = styled(IconRedux)`
   display: flex;
   flex-direction: column;
@@ -107,6 +109,7 @@ export const StyledIconRedux = styled(IconRedux)`
   height: 40px;
   color: #764abc;
 `;
+
 export const StyledIconExpress = styled(IconExpress)`
   display: flex;
   flex-direction: column;
@@ -117,6 +120,7 @@ export const StyledIconExpress = styled(IconExpress)`
   height: 40px;
   color: ${COLORS.CINNARBAR};
 `;
+
 export const StyledIconGit = styled(IconGit)`
   display: flex;
   flex-direction: column;
@@ -127,6 +131,7 @@ export const StyledIconGit = styled(IconGit)`
   height: 40px;
   color: ${COLORS.CINNARBAR};
 `;
+
 export const StyledIconGithub = styled(IconGithub)`
   display: flex;
   flex-direction: column;
@@ -137,6 +142,7 @@ export const StyledIconGithub = styled(IconGithub)`
   height: 40px;
   color: #ffff;
 `;
+
 export const StyledIconJest = styled(IconJest)`
   display: flex;
   flex-direction: column;
@@ -147,6 +153,7 @@ export const StyledIconJest = styled(IconJest)`
   height: 40px;
   color: #969696;
 `;
+
 export const StyledIconMui = styled(IconMui)`
   display: flex;
   flex-direction: column;

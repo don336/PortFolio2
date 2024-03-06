@@ -1,44 +1,60 @@
 import styled from "@emotion/styled";
 import { COLORS } from "../../Styles/Theme";
 import {
-  Typography as muiTypography,
-  Box as muiBox,
-  Container as muiContainer,
+  Typography as MuiTypography,
+  Box as MuiBox,
+  Container as MuiContainer,
   Link,
 } from "@mui/material";
-export const StyledTypography = styled(muiTypography)`
+
+export const StyledTypography = styled(MuiTypography)`
   color: ${COLORS.LINEN};
   padding: 10px;
 `;
-export const BorderBox = styled(muiBox)`
+
+export const BorderBox = styled(MuiBox)`
   border-left: 3px solid ${COLORS.CINNARBAR};
 `;
-export const StyledBox = styled(muiBox)`
+
+export const StyledBox = styled(MuiBox)`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   flex-direction: column;
-  background: #3a3a3a;
+  background: ${COLORS.DARKGREY};
   border-radius: 15px;
   padding: 10px;
   height: 400px;
+  @media screen and (max-width: 700px) {
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    height: auto;
+  }
 `;
-export const StyledContainer = styled(muiContainer)`
+
+export const StyledContainer = styled(MuiContainer)`
   margin-top: 50px;
 `;
 
-export const ContactBox = styled(muiBox)`
+export const ContactBox = styled(MuiBox)`
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: #3a3a3a;
+  background: ${COLORS.DARKGREY};
   border-radius: 15px;
   padding: 10px;
   height: 120px;
   width: 100px;
+  @media screen and (max-width: 700px) {
+    padding: 5px;
+    height: 80px;
+    width: 70px;
+    background: none;
+  }
 `;
 
 export const StyledLink = styled(Link)`

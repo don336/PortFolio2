@@ -1,21 +1,21 @@
 import styled from "@emotion/styled";
 import { COLORS } from "../../Styles/Theme";
-import TextareaAutosize from "@mui/base/TextareaAutosize";
+// import TextareaAutosize from "@mui/base/TextareaAutosize";
 import {
-  Typography as muiTypography,
-  Box as muiBox,
-  Container as muiContainer,
+  Typography as MuiTypography,
+  Box as MuiBox,
+  Container as MuiContainer,
   Link,
   Grid,
 } from "@mui/material";
 
-export const ContactBox = styled(muiBox)`
+export const ContactBox = styled(MuiBox)`
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: ${COLORS.DARKGREY};
+  background: ${COLORS.BLACKOLIVE};
   border-radius: 15px;
   padding: 10px;
   height: 150px;
@@ -27,11 +27,12 @@ export const ContactBox = styled(muiBox)`
     background: none;
   }
 `;
-export const StyledContainer = styled(muiContainer)`
+
+export const StyledContainer = styled(MuiContainer)`
   margin-top: 50px;
 `;
 
-export const StyledTypography = styled(muiTypography)`
+export const StyledTypography = styled(MuiTypography)`
   color: ${COLORS.LINEN};
   padding: 10px;
   @media screen and (max-width: 700px) {
@@ -39,35 +40,36 @@ export const StyledTypography = styled(muiTypography)`
   }
 `;
 
-export const BorderBox = styled(muiBox)`
+export const BorderBox = styled(MuiBox)`
   border-left: 3px solid ${COLORS.CINNARBAR};
   margin-bottom: 10px;
 `;
-export const StyledBox = styled(muiBox)`
+
+export const StyledBox = styled(MuiBox)`
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   flex-direction: column;
-  background: linear-gradient(
-    0deg,
-    rgba(4, 4, 8, 1) 15%,
-    rgba(1, 5, 10, 0.773546918767507) 58%,
-    rgba(8, 13, 25, 1) 100%
-  );
+  background: #132c38;
   border-radius: 15px;
   padding: 10px;
   height: 400px;
   @media screen and (max-width: 700px) {
-    width: 340px;
-    margin-right: 5px;
+    width: 100%;
+    margin: 0;
+    padding: 20px;
+    height: auto;
   }
 `;
-export const StyledTextarea = styled(TextareaAutosize)`
-  width: 100%;
-  border-radius: 5px;
-  background: ${COLORS.DARKGREY};
-`;
+
+// export const StyledTextarea = styled(TextareaAutosize)`
+//   width: 100%;
+//   border-radius: 5px;
+//   background: ${COLORS.BLACKOLIVE};
+//   padding: 10px;
+// `;
+
 export const StyledLink = styled(Link)`
   text-decoration: none;
   color: inherit;
@@ -75,6 +77,6 @@ export const StyledLink = styled(Link)`
 
 export const StyledGridItem = styled(Grid)`
   @media screen and (max-width: 700px) {
-   display: none;
+    display: none;
   }
 `;

@@ -1,6 +1,5 @@
 import styled from "@emotion/styled";
 import { COLORS } from "../../Styles/Theme";
-import Picture from "../../assets/pic2.jpg";
 import {
   Typography as muiTypography,
   Box as muiBox,
@@ -31,7 +30,6 @@ export const StyledContainer = styled(muiContainer)`
   flex-direction: column;
   margin-top: 50px;
   margin-bottom: 50px;
-  background-image: ${Picture};
 `;
 export const StyledGridItem = styled(Grid)`
   @media screen and (max-width: 700px) {

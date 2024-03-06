@@ -5,7 +5,7 @@ import {
   BorderBox,
   StyledLink,
 } from "./About.style";
-import resume from "../../assets/Resume.pdf";
+import resume from "../../assets/Martin_Resume_1.pdf";
 import picture from "../../assets/pic5.jpg";
 import CustomButton from "../../Elements/CustomButton/CustomButton";
 import { COLORS } from "../../Styles/Theme";
