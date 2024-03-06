@@ -15,7 +15,7 @@ const Home = () => {
 
         minHeight: "100vh",
       }}
-      maxWidth="xl"
+    maxWidth: "1200px"
     >
       <Navbar />
       <Showcase />
