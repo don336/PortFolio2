@@ -1,14 +1,13 @@
 import * as React from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import SpaOutlinedIcon from "@mui/icons-material/SpaOutlined";
-import FacebookOutlinedIcon from "@mui/icons-material/FacebookOutlined";
+
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import LinkedIn from "@mui/icons-material/LinkedIn";
 import { Box, SwipeableDrawer, Stack, Typography } from "@mui/material";
 import {
   StyledList,
-  StyledLink,
   StyledTypography,
   StyledBox,
   Item,
@@ -33,7 +32,7 @@ export default function SwipeableTemporaryDrawer() {
 
     setState({ ...state, [anchor]: open });
   };
-  const pages = ["Home", "About", "Skills","Projects", "Contact"];
+  const pages = ["Home", "About", "Skills", "Projects", "Contact"];
   const list = (anchor) => (
     <Box
       sx={{ width: anchor === "top" || anchor === "bottom" ? "auto" : 200 }}
@@ -44,9 +43,16 @@ export default function SwipeableTemporaryDrawer() {
       <StyledList>
         {pages.map((page) => {
           return (
-            <StyledLink href={`#${page}`}>
+            <a
+              href={`#${page}`}
+              key={page}
+              style={{
+                textDecoration: "none",
+                color: `${COLORS.LINEN}`,
+              }}
+            >
               <StyledTypography variant="h6">{page}</StyledTypography>
-            </StyledLink>
+            </a>
           );
         })}
       </StyledList>

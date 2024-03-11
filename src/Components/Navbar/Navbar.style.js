@@ -19,12 +19,6 @@ export const StyledList = styled(MUIList)`
   line-height: 1rem;
 `;
 
-export const StyledLink = styled(Link)`
-  text-decoration: none;
-  color: ${COLORS.LINEN};
-  line-height: 3rem;
-`;
-
 export const StyledTypography = styled(MUITypography)`
   color: ${COLORS.LINEN};
   padding: 10px;
