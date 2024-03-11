@@ -15,7 +15,7 @@ export const ContactBox = styled(MuiBox)`
   align-items: center;
   text-align: center;
   flex-direction: column;
-  background: ${COLORS.BLACKOLIVE};
+  background:  #1A2D2F;
   border-radius: 15px;
   padding: 10px;
   height: 150px;
