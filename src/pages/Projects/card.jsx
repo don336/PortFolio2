@@ -8,12 +8,14 @@ import {
   Avatar,
   IconButton,
   Typography,
+  Stack,
 } from "@mui/material";
 import { green } from "@mui/material/colors";
 import GithubIcon from "@mui/icons-material/GitHub";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import LinkIcon from "@mui/icons-material/Link";
 import { StyledCard } from "./projects.style";
+import { Link } from "react-router-dom";
 
 const ExpandMore = styled((props) => {
   const { expand, ...other } = props;
@@ -53,23 +55,32 @@ const ProjectPreview = () => {
   };
 
   return (
-    <>
+    <Stack direction="row" spacing={2}>
       {projectData.map((project) => (
         <StyledCard
-          sx={{ maxWidth: 345, backgroundColor: "#132c38", color: "#fff" }}
-          key={project.projectName}
+          sx={{
+            maxWidth: 345,
+            backgroundColor: "#132c38",
+            color: "#fff",
+          }}
         >
-          <CardHeader
-            avatar={
-              <Avatar
-                sx={{ bgcolor: green[500] }}
-                aria-label={project.projectName}
-              >
-                {project.projectLetter}
-              </Avatar>
-            }
-            title={project.projectName}
-          />
+          <Link
+            to={project.projectHost}
+            key={project.projectName}
+            style={{ textDecoration: "none", color: "#fff" }}
+          >
+            <CardHeader
+              avatar={
+                <Avatar
+                  sx={{ bgcolor: green[500] }}
+                  aria-label={project.projectName}
+                >
+                  {project.projectLetter}
+                </Avatar>
+              }
+              title={project.projectName}
+            />
+          </Link>
           <CardContent>
             <Typography
               variant="body2"
@@ -123,7 +134,7 @@ const ProjectPreview = () => {
           </Collapse>
         </StyledCard>
       ))}
-    </>
+    </Stack>
   );
 };
 export default ProjectPreview;

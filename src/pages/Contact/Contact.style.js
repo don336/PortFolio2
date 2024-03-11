@@ -43,6 +43,11 @@ export const StyledTypography = styled(MuiTypography)`
 export const BorderBox = styled(MuiBox)`
   border-left: 3px solid ${COLORS.CINNARBAR};
   margin-bottom: 10px;
+  border-radius: 8px;
+`;
+export const ContactHeadBox = styled(MuiBox)`
+  border-left: 3px solid ${COLORS.CINNARBAR};
+  margin-bottom: 10px;
 `;
 
 export const StyledBox = styled(MuiBox)`

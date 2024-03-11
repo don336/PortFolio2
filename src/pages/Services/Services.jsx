@@ -29,12 +29,8 @@ const Services = () => {
           </StyledTypography>
         </BorderBox>
       </Box>
-      <Grid
-        container
-        spacing={{ xs: 2, md: 2 }}
-        columns={{ xs: 2, sm: 2, md: 12 }}
-      >
-        <Grid item xs={2} sm={4} md={3}>
+      <Grid container spacing={{ xs: 2, md: 2 }} justifyContent="left">
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconReact />
@@ -42,7 +38,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconExpress />
@@ -50,7 +46,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconNode />
@@ -58,7 +54,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconMongoDb />
@@ -66,7 +62,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconMui />
@@ -74,7 +70,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconRedux />
@@ -82,7 +78,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconJest />
@@ -90,7 +86,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconGithub />
@@ -98,7 +94,7 @@ const Services = () => {
             </CardContent>
           </StyledCard>
         </Grid>
-        <Grid item xs={2} sm={4} md={3}>
+        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
           <StyledCard sx={{ width: 275 }}>
             <CardContent>
               <StyledIconGit />

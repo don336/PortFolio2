@@ -9,6 +9,7 @@ export const StyledContainer = styled(Container)`
 
 export const BorderBox = styled(MuiBox)`
   border-left: 3px solid ${COLORS.CINNARBAR};
+  margin-bottom: 12px;
 `;
 
 export const StyledTypography = styled(Typography)`
@@ -23,7 +24,6 @@ export const StyledBox = styled(MuiBox)`
 `;
 
 export const StyledCard = styled(Card)`
-  margin-left: 10px;
   background: #132c38;
   color: ${COLORS.LINEN};
   border-left: 3px solid ${COLORS.CINNARBAR};

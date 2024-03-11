@@ -8,6 +8,7 @@ import {
   ContactBox,
   StyledLink,
   StyledGridItem,
+  ContactHeadBox,
 } from "./Contact.style";
 import ChatBubbleOutlineOutlinedIcon from "@mui/icons-material/ChatBubbleOutlineOutlined";
 import picture from "../../assets/home.jpg";
@@ -17,7 +18,7 @@ import { Grid, Box, Stack } from "@mui/material";
 const Contact = () => {
   return (
     <StyledContainer id="Contact">
-      <BorderBox>
+      <ContactHeadBox>
         <StyledTypography
           variant="h2"
           sx={{
@@ -26,7 +27,7 @@ const Contact = () => {
         >
           CONTACT
         </StyledTypography>
-      </BorderBox>
+      </ContactHeadBox>
       <Grid
         container
         spacing={{ xs: 2, md: 3 }}
@@ -41,45 +42,47 @@ const Contact = () => {
             marginBottom: "30px",
           }}
         >
-          <StyledBox>
-            <StyledTypography variant="h3">Get in Touch</StyledTypography>
-            <StyledTypography variant="h6">
-              "Thank you for your interest in my work! I would love to hear from
-              you. Please use the mail below to send me a message, and I will
-              get back to you as soon as possible. Alternatively, you can reach
-              me via email at smgmartinez92@gmail.com. Thank you!"
-            </StyledTypography>
-            <Stack direction="row" spacing={2} mt={3}>
-              <ContactBox>
-                <StyledLink href="tel: +256786760482">
-                  <PhoneIphoneOutlinedIcon
-                    sx={{
-                      color: `${COLORS.CINNARBAR}`,
-                    }}
-                  />
-                </StyledLink>
-                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
-                  <StyledTypography variant="h6">
-                    +256 786 760 482
+          <BorderBox>
+            <StyledBox>
+              <StyledTypography variant="h3">Get in Touch</StyledTypography>
+              <StyledTypography variant="h6">
+                "Thank you for your interest in my work! I would love to hear
+                from you. Please use the mail below to send me a message, and I
+                will get back to you as soon as possible. Alternatively, you can
+                reach me via email at smgmartinez92@gmail.com. Thank you!"
+              </StyledTypography>
+              <Stack direction="row" spacing={2} mt={3}>
+                <ContactBox>
+                  <StyledLink href="tel: +256786760482">
+                    <PhoneIphoneOutlinedIcon
+                      sx={{
+                        color: `${COLORS.CINNARBAR}`,
+                      }}
+                    />
+                  </StyledLink>
+                  <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
+                    <StyledTypography variant="h6">
+                      +256 786 760 482
+                    </StyledTypography>
                   </StyledTypography>
-                </StyledTypography>
-              </ContactBox>
-              <ContactBox>
-                <StyledLink href="mailto: smgmartinez92@gmail.com">
-                  <ChatBubbleOutlineOutlinedIcon
-                    sx={{
-                      color: `${COLORS.CINNARBAR}`,
-                    }}
-                  />
-                </StyledLink>
-                <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
-                  <StyledTypography variant="h6">
-                    smgmartinez92@gmail.com
+                </ContactBox>
+                <ContactBox>
+                  <StyledLink href="mailto: smgmartinez92@gmail.com">
+                    <ChatBubbleOutlineOutlinedIcon
+                      sx={{
+                        color: `${COLORS.CINNARBAR}`,
+                      }}
+                    />
+                  </StyledLink>
+                  <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
+                    <StyledTypography variant="h6">
+                      smgmartinez92@gmail.com
+                    </StyledTypography>
                   </StyledTypography>
-                </StyledTypography>
-              </ContactBox>
-            </Stack>
-          </StyledBox>
+                </ContactBox>
+              </Stack>
+            </StyledBox>
+          </BorderBox>
         </Grid>
         <StyledGridItem
           item
