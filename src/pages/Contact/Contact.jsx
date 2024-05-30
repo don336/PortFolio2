@@ -62,7 +62,7 @@ const Contact = () => {
                   </StyledLink>
                   <StyledTypography variant="h4" sx={{ fontWeight: "700" }}>
                     <StyledTypography variant="h6">
-                      +256 786 760 482
+                      +256 770 302 731
                     </StyledTypography>
                   </StyledTypography>
                 </ContactBox>
