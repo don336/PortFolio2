@@ -19,7 +19,7 @@ export const StyledTypography = styled(Typography)`
 
 export const StyledBox = styled(MuiBox)`
   display: flex;
-  padd ing: 10px;
+  padding: 10px; /* Fixed typo */
   margin: auto;
 `;
 

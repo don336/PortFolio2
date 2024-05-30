@@ -1,11 +1,11 @@
-import { Box, Grid, } from "@mui/material";
+import { Box, Grid } from "@mui/material";
 import {
   StyledContainer,
   StyledTypography,
   BorderBox,
   StyledLink,
 } from "./About.style";
-import resume from "../../assets/Martin_Resume_1.pdf";
+import resume from "../../assets/Martin_Resume.pdf";
 import picture from "../../assets/pic5.jpg";
 import CustomButton from "../../Elements/CustomButton/CustomButton";
 import { COLORS } from "../../Styles/Theme";
@@ -82,13 +82,12 @@ const About = () => {
           sx={{
             marginBottom: "30px",
           }}
-            data-aos-delay="1500"
-            data-aos="fade-right"
-            data-aos-once="true"
-            className="profilePicture"
+          data-aos-delay="1500"
+          data-aos="fade-right"
+          data-aos-once="true"
+          className="profilePicture"
         >
-           <img src={picture} alt="Profile" loading="lazy" className="img1" />
-         
+          <img src={picture} alt="Profile" loading="lazy" className="img1" />
         </Grid>
       </Grid>
     </StyledContainer>

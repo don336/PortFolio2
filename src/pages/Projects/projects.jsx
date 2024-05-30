@@ -4,10 +4,11 @@ import {
   BorderBox,
   StyledTypography,
   StyledBox,
+  StyledCard,
 } from "./projects.style";
-import ProjectPreview from "./card";
+import ProjectPreview from "./card"; // Assuming this is where ProjectPreview is imported
 
-const projects = () => {
+const Projects = () => {
   return (
     <StyledContainer id="Projects">
       <StyledBox>
@@ -22,4 +23,4 @@ const projects = () => {
   );
 };
 
-export default projects;
+export default Projects;

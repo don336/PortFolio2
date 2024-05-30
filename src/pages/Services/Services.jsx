@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Box, Card, CardContent, Grid } from "@mui/material";
+import { Container, Box, Grid } from "@mui/material";
 import {
   StyledTypography,
   StyledCard,
@@ -14,94 +14,38 @@ import {
   StyledIconMongoDb,
   StyledIconJest,
 } from "./Services.style";
+
+const services = [
+  { icon: <StyledIconReact />, label: "REACT" },
+  { icon: <StyledIconExpress />, label: "EXPRESS" },
+  { icon: <StyledIconNode />, label: "NODE.JS" },
+  { icon: <StyledIconMongoDb />, label: "MONGO DB" },
+  { icon: <StyledIconMui />, label: "MATERIAL UI" },
+  { icon: <StyledIconRedux />, label: "REDUX" },
+  { icon: <StyledIconJest />, label: "JEST" },
+  { icon: <StyledIconGithub />, label: "GITHUB" },
+  { icon: <StyledIconGit />, label: "GIT" },
+];
+
 const Services = () => {
   return (
     <Container id="Skills">
-      <Box>
+      <Box mb={4}>
         <BorderBox>
-          <StyledTypography
-            variant="h2"
-            sx={{
-              fontWeight: "700",
-            }}
-          >
+          <StyledTypography variant="h2" sx={{ fontWeight: "700" }}>
             SKILLS
           </StyledTypography>
         </BorderBox>
       </Box>
-      <Grid container spacing={{ xs: 2, md: 2 }} justifyContent="left">
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconReact />
-              <StyledTypography variant="h6">REACT</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconExpress />
-              <StyledTypography variant="h6">EXPRESS</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconNode />
-              <StyledTypography variant="h6">NODE.JS</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconMongoDb />
-              <StyledTypography variant="h6">MONGO DB</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconMui />
-              <StyledTypography variant="h6">MATERIAL UI</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconRedux />
-              <StyledTypography variant="h6">REDUX</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconJest />
-              <StyledTypography variant="h6">JEST</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconGithub />
-              <StyledTypography variant="h6">GITHUB</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
-        <Grid item xs={6} sm={6} md={4} lg={3} xl={2}>
-          <StyledCard sx={{ width: 275 }}>
-            <CardContent>
-              <StyledIconGit />
-              <StyledTypography variant="h6">GIT</StyledTypography>
-            </CardContent>
-          </StyledCard>
-        </Grid>
+      <Grid container spacing={2} justifyContent="center">
+        {services.map((service, index) => (
+          <Grid item xs={12} sm={6} md={4} lg={3} xl={2} key={index}>
+            <StyledCard>
+              {service.icon}
+              <StyledTypography variant="h6">{service.label}</StyledTypography>
+            </StyledCard>
+          </Grid>
+        ))}
       </Grid>
     </Container>
   );

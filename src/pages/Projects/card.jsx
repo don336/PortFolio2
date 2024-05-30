@@ -45,6 +45,14 @@ const projectData = [
     projectHost: "https://prompt-sphere-tau.vercel.app/",
     projectLetter: "P",
   },
+  {
+    projectName: "TITL",
+    projectDesc: `Titl is an innovative property management platform designed to streamline and optimize the property management experience for landlords, property managers, and tenants. This repository houses the client-side application, built to offer a seamless and user-friendly interface, facilitating efficient property management`,
+    projectTech: `This is an application that uses React, Tailwind CSS and PostGress.`,
+    projectRepo: `https://github.com/titl-al`,
+    projectHost: "https://client.dev.titl.app/",
+    projectLetter: "T",
+  },
 ];
 
 const ProjectPreview = () => {

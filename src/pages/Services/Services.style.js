@@ -57,7 +57,9 @@ export const StyledCard = styled(MuiCard)`
   margin-top: 10px;
   background: #132c38;
   border-left: 3px solid ${COLORS.CINNARBAR};
-  height: 150px;
+  height: 200px;
+  width: 100%;
+  max-width: 275px;
   &:hover {
     cursor: pointer;
     box-shadow: 5px 5px 5px 5px #000;
@@ -66,7 +68,7 @@ export const StyledCard = styled(MuiCard)`
   }
 `;
 
-export const StyledIconReact = styled(IconReact)`
+const iconStyles = `
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -74,93 +76,49 @@ export const StyledIconReact = styled(IconReact)`
   margin: auto;
   width: 40px;
   height: 40px;
+`;
+
+export const StyledIconReact = styled(IconReact)`
+  ${iconStyles}
   color: #7cc5d9;
 `;
 
 export const StyledIconMongoDb = styled(IconBxlMongodb)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
+  ${iconStyles}
   color: #4daa57;
 `;
 
 export const StyledIconNode = styled(IconNodeJs)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
+  ${iconStyles}
   color: #4daa57;
 `;
 
 export const StyledIconRedux = styled(IconRedux)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
+  ${iconStyles}
   color: #764abc;
 `;
 
 export const StyledIconExpress = styled(IconExpress)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
+  ${iconStyles}
   color: ${COLORS.CINNARBAR};
 `;
 
 export const StyledIconGit = styled(IconGit)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
+  ${iconStyles}
   color: ${COLORS.CINNARBAR};
 `;
 
 export const StyledIconGithub = styled(IconGithub)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
-  color: #ffff;
+  ${iconStyles}
+  color: #ffffff;
 `;
 
 export const StyledIconJest = styled(IconJest)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
+  ${iconStyles}
   color: #969696;
 `;
 
 export const StyledIconMui = styled(IconMui)`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: auto;
-  width: 40px;
-  height: 40px;
+  ${iconStyles}
   color: #3e92cc;
 `;
