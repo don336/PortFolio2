@@ -39,23 +39,19 @@ const About = () => {
           </BorderBox>
           <Box>
             <StyledTypography variant="h5">
-              My name is Ssemugabi Martin. As a frontend developer, I believe
-              that design and functionality should always go hand in hand.
-              That's why I'm dedicated to creating web applications that not
-              only look beautiful but also provide a high level of functionality
+              My name is Martin Ssemugabi. As a Full-Stack Developer, design and functionality should always go hand in hand.
+              That's why I'm dedicated to creating web applications that look beautiful and provide a high level of functionality
               and interactivity.
             </StyledTypography>{" "}
             <StyledTypography variant="h5">
               I have worked on various projects using technologies such as HTML,
-              CSS, JavaScript, React,Redux, Express, Node.js and other modern
+              CSS, JavaScript, React, Redux, Express, Node.js, and other modern
               frontend frameworks. I enjoy collaborating with other developers
               and designers to create innovative solutions that meet the needs
               of clients and users.
             </StyledTypography>{" "}
             <StyledTypography variant="h5">
-              Thank you for taking the time to explore my portfolio. Please feel
-              free to contact me if you have any questions or if you would like
-              to discuss a potential collaboration. I look forward to hearing
+              Thank you for taking the time to explore my portfolio. Please don't hesitate to contact me if you have any questions or want to discuss a potential collaboration. I look forward to hearing
               from you!"
             </StyledTypography>
           </Box>
