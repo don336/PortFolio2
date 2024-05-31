@@ -47,9 +47,7 @@ const Contact = () => {
               <StyledTypography variant="h3">Get in Touch</StyledTypography>
               <StyledTypography variant="h6">
                 "Thank you for your interest in my work! I would love to hear
-                from you. Please use the mail below to send me a message, and I
-                will get back to you as soon as possible. Alternatively, you can
-                reach me via email at smgmartinez92@gmail.com. Thank you!"
+                from you. Please use the communication scheme below, I'll get back to you as soon as possible."
               </StyledTypography>
               <Stack direction="row" spacing={2} mt={3}>
                 <ContactBox>
