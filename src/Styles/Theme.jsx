@@ -1,6 +1,7 @@
 import { createTheme } from "@mui/material";
 export const COLORS = {
-  CINNARBAR: "#01C38D",
+  BLUE: "#1074F5",
+  HOVERBLUE: "#093B7D",
   LINEN: "#FFEDDF",
   BLACKOLIVE: "#434A42",
   DARKGREY: "#1C1C1C",
@@ -11,7 +12,8 @@ export const FONT = {
   // Define available font-families to be used throughout the app
   // font-family: 'Montserrat', sans-serif;
   FAMILY: {
-    ROBOTO: ["Montserrat", "sans-serif"].join(","),
+    Montserrat: ["Montserrat", "sans-serif"].join(","),
+    PlayFair: ["PlayFair"].join(","),
   },
   LINE_HEIGHT: "136.4%",
   // Define font weights that would be used throughout the app
@@ -61,11 +63,12 @@ export const FONT = {
 };
 export const theme = createTheme({
   typography: {
-    fontFamily: FONT.FAMILY.ROBOTO,
+    fontFamily: FONT.FAMILY.PlayFair,
     h1: {
       fontSize: FONT.SIZES[30],
       lineHeight: FONT.LINE_HEIGHT,
       fontWeight: FONT.WEIGHT.BOLD,
+      fontFamily: FONT.FAMILY.PlayFair,
     },
     h2: {
       fontSize: FONT.SIZES[24],
@@ -86,7 +89,8 @@ export const theme = createTheme({
     h5: {
       fontSize: FONT.SIZES[16],
       lineHeight: FONT.LINE_HEIGHT[26],
-      fontWeight: FONT.WEIGHT.LIGHT,
+      fontWeight: FONT.WEIGHT.REGULAR,
+      fontFamily: FONT.FAMILY.Montserrat,
     },
     h6: {
       fontSize: FONT.SIZES[12],
@@ -105,8 +109,9 @@ export const theme = createTheme({
     },
     w2: {
       fontSize: FONT.SIZES[12],
-      fontWeight: FONT.WEIGHT.BOLD,
+      fontWeight: FONT.WEIGHT.REGULAR,
       lineHeight: FONT.LINE_HEIGHT,
+      fontFamily: FONT.FAMILY.Montserrat,
     },
   },
 });

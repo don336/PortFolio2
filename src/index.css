@@ -1,42 +1,7 @@
-#root {
-  color: black;
-  background: #1c1c1c;
-  flex-direction: column;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.primary-color {
-  background: #d1603d;
-  padding: 5px;
-  border-radius: 5px;
-  color: #333;
-}
-.primary {
-  color: #01c38d;
-}
-
-.img1 {
-  border-radius: 17px;
-  height: 400px;
-  width: 100%;
-  object-fit: contain;
-}
-img {
-  border-radius: 15px;
-  height: 400px;
-  width: 500px;
-  object-fit: cover;
-}
-.profile-image {
-  padding-top: 5rem;
-  max-width: 20rem;
-  max-height: 20rem;
-  margin-top: 8rem;
-}
-@media screen and (max-width: 500px) {
-  img {
-    border-radius: 15px;
-    height: 200px;
-    width: 300px;
-    object-fit: cover;
-  }
+.MuiContainer-root {
+  width: 2000px;
 }

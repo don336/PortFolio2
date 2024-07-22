@@ -1,28 +1,23 @@
 import React from "react";
 import { Container } from "@mui/material";
 import Navbar from "../Components/Navbar/Navbar";
-import Showcase from "../Components/Showcase/Showcase";
-import About from "../pages/About/About";
-import Services from "../pages/Services/Services";
-import Projects from "../pages/Projects/projects";
-import Contact from "../pages/Contact/Contact";
+import Hero from "../Components/HeroSection/Hero";
+import About from "../Components/About/About";
+import Services from "../Components/Services/Services";
+import Projects from "../Components/Projects/Projects";
+import ContactSection from "../Components/Contact/Contact";
+import Footer from "../Components/Footer/Footer";
 
 const Home = () => {
   return (
-    <Container
-      style={{
-        background: `#1A2D2F`,
-
-        minHeight: "100vh",
-      }}
-      maxWidth={false}
-    >
+    <Container maxWidth={"2000px"} min-height={"1000vh"} className="w-full">
       <Navbar />
-      <Showcase />
+      <Hero />
       <About />
       <Services />
       <Projects />
-      <Contact />
+      <ContactSection />
+      <Footer />
     </Container>
   );
 };
