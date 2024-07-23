@@ -1,12 +1,12 @@
 import React from "react";
 import { Email, GitHub, Phone, LinkedIn } from "@mui/icons-material";
-import { Box, Container, Typography } from "@mui/material";
+import { Typography } from "@mui/material";
 import { FONT } from "../../Styles/Theme";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r rounded-lg from-blue-500 to-blue-950 text-white p-8 flex justify-between items-center w-full">
-      <div className="flex flex-col">
+    <div className="bg-gradient-to-r rounded-lg from-blue-500 to-blue-950 text-white p-8 flex flex-col md:flex-row justify-between items-center w-full">
+      <div className="flex flex-col mb-8 md:mb-0">
         <Typography
           className="font-bold text-lg"
           sx={{
@@ -62,7 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
-      <div>
+      <div className="mb-8 md:mb-0">
         <Typography
           sx={{
             fontFamily: FONT.FAMILY.PlayFair,
@@ -93,16 +93,25 @@ const Footer = () => {
       </div>
 
       <div>
-        <h3 className="font-bold text-lg">SUBSCRIPTION</h3>
-        <form className="flex mt-4">
+        <Typography
+          className="font-bold text-lg"
+          sx={{
+            fontFamily: FONT.FAMILY.PlayFair,
+            fontWeight: FONT.WEIGHT.BOLD,
+            fontSize: FONT.SIZES[20],
+          }}
+        >
+          SUBSCRIPTION
+        </Typography>
+        <form className="flex flex-col mt-4 space-y-2 w-full">
           <input
             type="email"
             placeholder="ENTER YOUR EMAIL........."
-            className="p-2 rounded-l-lg outline-none"
+            className="p-2 rounded-lg outline-none w-full"
           />
           <button
             type="submit"
-            className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-r-lg"
+            className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg w-full"
           >
             SUBMIT
           </button>

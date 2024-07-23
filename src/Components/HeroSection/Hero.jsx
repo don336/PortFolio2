@@ -7,19 +7,18 @@ import resume from "../../assets/Martin_Resume.pdf";
 
 const Hero = () => {
   return (
-    <Container maxWidth={"xl"} id="Home">
+    <Container maxWidth="xl" id="Home">
       <Stack
-        direction={"row"}
-        spacing={6}
+        direction={{ xs: "column", md: "row" }}
+        spacing={{ xs: 4, md: 6 }}
         mt={7}
-        className="justify-between"
-        alignItems="center"
+        className="justify-between items-center"
       >
-        <div id="CatchPhrase" className="text-left">
+        <div id="CatchPhrase" className="text-left flex-1">
           <Typography
             variant="h1"
             sx={{
-              fontSize: FONT.SIZES[36],
+              fontSize: { xs: FONT.SIZES[24], md: FONT.SIZES[36] },
               fontFamily: FONT.FAMILY.PlayFair,
               fontWeight: FONT.WEIGHT.BOLD,
             }}
@@ -27,26 +26,25 @@ const Hero = () => {
             CODE. <span className="text-blue-500">INNOVATE.</span> ELEVATE.
           </Typography>
           <Typography
-            className="text-left"
+            className="text-left mt-4"
             sx={{
               fontFamily: FONT.FAMILY.Montserrat,
               fontWeight: FONT.WEIGHT.MEDIUM,
-              fontSize: FONT.SIZES[14],
-              lineHeight: "30px",
-              mt: 2,
+              fontSize: { xs: FONT.SIZES[12], md: FONT.SIZES[14] },
+              lineHeight: { xs: "24px", md: "30px" },
             }}
           >
             Welcome! I specialize in Software Development, crafting innovative{" "}
-            <br />
+            <br className="hidden md:block" />
             and user-centric digital solutions. Explore my work and let's create{" "}
-            <br />
+            <br className="hidden md:block" />
             something amazing together.
           </Typography>
-          <Stack direction={"row"} spacing={2} mt={3}>
+          <Stack direction={{ xs: "column", sm: "row" }} spacing={2} mt={3}>
             <CustomButton
               background={COLORS.BLUE}
               hoverbackground={COLORS.HOVERBLUE}
-              width={"12rem"}
+              width={{ xs: "100%", sm: "12rem" }}
             >
               <Link
                 sx={{ textDecoration: "none", color: "#fff" }}
@@ -55,7 +53,10 @@ const Hero = () => {
                 <Typography variant="w2">Explore My Work</Typography>
               </Link>
             </CustomButton>
-            <CustomButton background={COLORS.GREY} width={"12rem"}>
+            <CustomButton
+              background={COLORS.GREY}
+              width={{ xs: "100%", sm: "12rem" }}
+            >
               <Link
                 sx={{ textDecoration: "none", color: "#fff" }}
                 href={resume}
@@ -67,15 +68,16 @@ const Hero = () => {
           </Stack>
         </div>
 
-        <div className="profile-image">
+        <div className="profile-image flex-1">
           <Box
-            width={"445px"}
-            height={"500px"}
+            width={{ xs: "100%", md: "445px" }}
+            height={{ xs: "auto", md: "500px" }}
             sx={{
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               overflow: "hidden",
+              mt: { xs: 4, md: 0 },
             }}
           >
             <img

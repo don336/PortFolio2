@@ -11,11 +11,11 @@ const Navbar = () => {
         style={{
           fontFamily: FONT.FAMILY.PlayFair,
           fontWeight: FONT.WEIGHT.SEMIBOLD,
-          fontSize: FONT.SIZES[16],
+          fontSize: FONT.SIZES[20],
         }}
       >
         <h1>
-          Martin <span className="text-blue-500">Ssemugabi</span>
+          <span className="text-blue-500">MARTIN</span> SSEMUGABI
         </h1>
       </div>
       <div className="links p-3">

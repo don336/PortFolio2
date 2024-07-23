@@ -11,16 +11,17 @@ import Footer from "../Components/Footer/Footer";
 const Home = () => {
   return (
     <Container
-      maxWidth={false}
-      min-height={"1000vh"}
-      className="p-9 flex flex-col justify-center items-center m-auto"
+      maxWidth="xl"
+      className="min-h-screen flex flex-col justify-center items-center mx-auto px-4 sm:px-6 lg:px-8"
     >
       <Navbar />
-      <Hero />
-      <About />
-      <Services />
-      <Projects />
-      <ContactSection />
+      <div className="w-full">
+        <Hero />
+        <About />
+        <Services />
+        <Projects />
+        <ContactSection />
+      </div>
       <Footer />
     </Container>
   );

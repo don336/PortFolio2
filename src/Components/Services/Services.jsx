@@ -24,10 +24,10 @@ const Services = () => {
           sx={{
             fontFamily: FONT.FAMILY.PlayFair,
             fontWeight: FONT.WEIGHT.SEMIBOLD,
-            fontSize: FONT.SIZES[14],
+            fontSize: FONT.SIZES[20],
             lineHeight: FONT.LINE_HEIGHTS[30],
           }}
-          className="text-blue-600 font-bold "
+          className="text-blue-600 font-bold mb-9"
         >
           SERVICES
         </Typography>

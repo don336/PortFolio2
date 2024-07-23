@@ -102,7 +102,7 @@ const Projects = () => {
           sx={{
             fontFamily: FONT.FAMILY.PlayFair,
             fontWeight: FONT.WEIGHT.SEMIBOLD,
-            fontSize: FONT.SIZES[14],
+            fontSize: FONT.SIZES[20],
             lineHeight: FONT.LINE_HEIGHTS[30],
           }}
         >
