@@ -10,7 +10,11 @@ import Footer from "../Components/Footer/Footer";
 
 const Home = () => {
   return (
-    <Container maxWidth={"2000px"} min-height={"1000vh"} className="w-full">
+    <Container
+      maxWidth={false}
+      min-height={"1000vh"}
+      className="p-9 flex flex-col justify-center items-center m-auto"
+    >
       <Navbar />
       <Hero />
       <About />

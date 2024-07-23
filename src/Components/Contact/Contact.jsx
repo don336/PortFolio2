@@ -6,34 +6,24 @@ import Business from "../../assets/Business_meeting.jpg";
 const ContactForm = () => {
   return (
     <div className="flex items-left  p-8 rounded-xl mt-12">
-      <Typography
-        sx={{
-          fontFamily: FONT.FAMILY.PlayFair,
-          fontWeight: FONT.WEIGHT.SEMIBOLD,
-          fontSize: FONT.SIZES[24],
-          lineHeight: FONT.LINE_HEIGHTS[30],
-          color: COLORS.BLUE,
-        }}
-      >
-        Contact Me
-      </Typography>
       <div
-        className="bg-white rounded-xl shadow-2xl overflow-hidden max-w-5xl w-full flex flex-col lg:flex-row h-auto mt-7"
+        className="bg-white rounded-xl shadow-2xl overflow-hidden w-full flex flex-col lg:flex-row h-auto mt-7"
         style={{
           height: "445px",
         }}
       >
-        <div className="w-full lg:w-1/2 p-8">
+        <div className=" items-start w-1/2 p-8">
           <Typography
             className="text-3xl font-bold text-gray-800 pb-4"
             sx={{
-              fontFamily: FONT.FAMILY.Montserrat,
-              fontWeight: FONT.WEIGHT.SEMIBOLD,
+              fontFamily: FONT.FAMILY.PlayFair,
+              fontWeight: FONT.WEIGHT.BOLD,
               fontSize: FONT.SIZES[16],
+              color: COLORS.BLUE,
             }}
             variant="h1"
           >
-            Let's talk
+            Contact Me
           </Typography>
           <Typography
             className="text-gray-600 pb-4"

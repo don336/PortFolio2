@@ -1,11 +1,11 @@
 import React from "react";
 import { Email, GitHub, Phone, LinkedIn } from "@mui/icons-material";
-import { Box, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import { FONT } from "../../Styles/Theme";
 
 const Footer = () => {
   return (
-    <div className="bg-gradient-to-r from-blue-500 to-blue-950 text-white p-8 flex justify-between items-center w-full">
+    <div className="bg-gradient-to-r rounded-lg from-blue-500 to-blue-950 text-white p-8 flex justify-between items-center w-full">
       <div className="flex flex-col">
         <Typography
           className="font-bold text-lg"

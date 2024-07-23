@@ -7,7 +7,7 @@ import resume from "../../assets/Martin_Resume.pdf";
 
 const Hero = () => {
   return (
-    <Container maxWidth={false} id="Home">
+    <Container maxWidth={"xl"} id="Home">
       <Stack
         direction={"row"}
         spacing={6}

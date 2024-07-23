@@ -1,5 +1,5 @@
 import React from "react";
-import { Typography } from "@mui/material";
+import { Container, Typography } from "@mui/material";
 import { FONT } from "../../Styles/Theme";
 
 const services = [
@@ -13,7 +13,11 @@ const services = [
 
 const Services = () => {
   return (
-    <div className="bg-gray-100 p-10 rounded-xl mt-32" id="Services">
+    <Container
+      maxWidth={"xl"}
+      className="bg-gray-100 p-10 rounded-xl mt-32"
+      id="Services"
+    >
       <div className="container mx-auto">
         <Typography
           variant="h5"
@@ -64,7 +68,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-    </div>
+    </Container>
   );
 };
 
