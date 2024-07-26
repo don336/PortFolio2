@@ -1,123 +1,181 @@
 import React from "react";
 import { Email, GitHub, Phone, LinkedIn } from "@mui/icons-material";
-import { Typography } from "@mui/material";
-import { FONT } from "../../Styles/Theme";
+import {
+  Typography,
+  Grid,
+  Box,
+  Container,
+  IconButton,
+  Link,
+  TextField,
+  Button,
+} from "@mui/material";
+import { FONT, COLORS } from "../../Styles/Theme";
 
 const Footer = () => {
+  const iconStyle = { color: "white", fontSize: 24, marginRight: 2 };
+  const linkStyle = { color: "white", "&:hover": { color: COLORS.HOVERBLUE } };
+
   return (
-    <div className="bg-gradient-to-r rounded-lg from-blue-500 to-blue-950 text-white p-8 flex flex-col md:flex-row justify-between items-center w-full">
-      <div className="flex flex-col mb-8 md:mb-0">
-        <Typography
-          className="font-bold text-lg"
-          sx={{
-            fontFamily: FONT.FAMILY.PlayFair,
-            fontWeight: FONT.WEIGHT.BOLD,
-            fontSize: FONT.SIZES[20],
-          }}
-        >
-          MARTIN SSEMGABI
-        </Typography>
-        <Typography
-          variant="h4"
-          sx={{
-            fontFamily: FONT.FAMILY.Montserrat,
-            fontWeight: FONT.WEIGHT.REGULAR,
-            fontSize: FONT.SIZES[14],
-          }}
-        >
-          Email: smgmartine292@gmail.com
-        </Typography>
-        <Typography
-          sx={{
-            fontFamily: FONT.FAMILY.Montserrat,
-            fontWeight: FONT.WEIGHT.REGULAR,
-            fontSize: FONT.SIZES[14],
-          }}
-        >
-          Phone: +256770302731
-        </Typography>
-        <div className="flex space-x-4 mt-4">
-          <a href="mailto:smgmartinez92@gmail.com" className="text-white">
-            <Email />
-          </a>
-          <a
-            href="https://github.com/don336"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white"
-          >
-            <GitHub />
-          </a>
-          <a href="tel:+256770302731" className="text-white">
-            <Phone />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/Ssemugabi"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-white"
-          >
-            <LinkedIn />
-          </a>
-        </div>
-      </div>
+    <Box
+      sx={{
+        bgcolor: "primary.main",
+        color: "white",
+        py: 6,
+        backgroundImage: `linear-gradient(to right, ${COLORS.BLUE}, ${COLORS.DARKBLUE})`,
+      }}
+    >
+      <Container maxWidth="lg">
+        <Grid container spacing={4}>
+          <Grid item xs={12} md={4}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                fontFamily: FONT.FAMILY.PlayFair,
+                fontWeight: FONT.WEIGHT.BOLD,
+              }}
+            >
+              MARTIN SSEMGABI
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ mb: 2, fontFamily: FONT.FAMILY.Montserrat }}
+            >
+              Full-Stack Software Developer
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ fontFamily: FONT.FAMILY.Montserrat }}
+            >
+              Email: smgmartine292@gmail.com
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ mb: 2, fontFamily: FONT.FAMILY.Montserrat }}
+            >
+              Phone: +256770302731
+            </Typography>
+            <Box>
+              <IconButton
+                href="mailto:smgmartinez92@gmail.com"
+                aria-label="Email"
+              >
+                <Email sx={iconStyle} />
+              </IconButton>
+              <IconButton
+                href="https://github.com/don336"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="GitHub"
+              >
+                <GitHub sx={iconStyle} />
+              </IconButton>
+              <IconButton href="tel:+256770302731" aria-label="Phone">
+                <Phone sx={iconStyle} />
+              </IconButton>
+              <IconButton
+                href="https://www.linkedin.com/in/ssemugabi-martin-4010101b9/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="LinkedIn"
+              >
+                <LinkedIn sx={iconStyle} />
+              </IconButton>
+            </Box>
+          </Grid>
 
-      <div className="mb-8 md:mb-0">
-        <Typography
-          sx={{
-            fontFamily: FONT.FAMILY.PlayFair,
-            fontWeight: FONT.WEIGHT.BOLD,
-            fontSize: FONT.SIZES[20],
-          }}
-          className="font-bold text-lg"
-        >
-          QUICK LINKS
-        </Typography>
-        <ul className="list-none p-0">
-          <li>
-            <a href="/#Home" className="text-white hover:text-gray-300">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="/#About" className="text-white hover:text-gray-300">
-              About Me
-            </a>
-          </li>
-          <li>
-            <a href="/#Services" className="text-white hover:text-gray-300">
-              Services
-            </a>
-          </li>
-        </ul>
-      </div>
+          <Grid item xs={12} md={4}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                fontFamily: FONT.FAMILY.PlayFair,
+                fontWeight: FONT.WEIGHT.BOLD,
+              }}
+            >
+              QUICK LINKS
+            </Typography>
+            <nav>
+              {["Home", "About Me", "Services", "Contact"].map((item) => (
+                <Link
+                  key={item}
+                  href={`/#${item.replace(" ", "")}`}
+                  sx={{
+                    ...linkStyle,
+                    display: "block",
+                    mb: 1,
+                    fontFamily: FONT.FAMILY.Montserrat,
+                  }}
+                >
+                  {item}
+                </Link>
+              ))}
+            </nav>
+          </Grid>
 
-      <div>
+          <Grid item xs={12} md={4}>
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                fontFamily: FONT.FAMILY.PlayFair,
+                fontWeight: FONT.WEIGHT.BOLD,
+              }}
+            >
+              STAY UPDATED
+            </Typography>
+            <Typography
+              variant="body2"
+              sx={{ mb: 2, fontFamily: FONT.FAMILY.Montserrat }}
+            >
+              Subscribe to receive updates on my latest projects and tech
+              insights.
+            </Typography>
+            <form>
+              <TextField
+                fullWidth
+                variant="outlined"
+                placeholder="Enter your email"
+                size="small"
+                sx={{
+                  mb: 2,
+                  bgcolor: "rgba(255,255,255,0.1)",
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "white" },
+                    "&:hover fieldset": { borderColor: COLORS.HOVERBLUE },
+                    "&.Mui-focused fieldset": { borderColor: COLORS.HOVERBLUE },
+                  },
+                  "& input": { color: "white" },
+                }}
+              />
+              <Button
+                variant="contained"
+                fullWidth
+                sx={{
+                  bgcolor: COLORS.HOVERBLUE,
+                  "&:hover": { bgcolor: COLORS.BLUE },
+                  fontFamily: FONT.FAMILY.Montserrat,
+                }}
+              >
+                Subscribe
+              </Button>
+            </form>
+          </Grid>
+        </Grid>
+
         <Typography
-          className="font-bold text-lg"
+          variant="body2"
           sx={{
-            fontFamily: FONT.FAMILY.PlayFair,
-            fontWeight: FONT.WEIGHT.BOLD,
-            fontSize: FONT.SIZES[20],
+            mt: 4,
+            textAlign: "center",
+            fontFamily: FONT.FAMILY.Montserrat,
           }}
         >
-          SUBSCRIPTION
+          © {new Date().getFullYear()} Martin Ssemgabi. All rights reserved.
         </Typography>
-        <form className="flex flex-col mt-4 space-y-2 w-full">
-          <input
-            type="email"
-            placeholder="ENTER YOUR EMAIL........."
-            className="p-2 rounded-lg outline-none w-full"
-          />
-          <button
-            type="submit"
-            className="p-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg w-full"
-          >
-            SUBMIT
-          </button>
-        </form>
-      </div>
-    </div>
+      </Container>
+    </Box>
   );
 };
 
