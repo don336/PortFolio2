@@ -140,7 +140,7 @@ const ContactForm = () => {
             <Typography
               sx={{ fontFamily: '"Roboto", sans-serif', color: "#ecf0f1" }}
             >
-              senior.dev@example.com
+              smgmartinez92@gmail.com
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", marginBottom: 3 }}>
@@ -148,7 +148,7 @@ const ContactForm = () => {
             <Typography
               sx={{ fontFamily: '"Roboto", sans-serif', color: "#ecf0f1" }}
             >
-              +1 (123) 456-7890
+              +256 770302731
             </Typography>
           </Box>
           <Box sx={{ display: "flex", alignItems: "center", marginBottom: 4 }}>
@@ -156,7 +156,7 @@ const ContactForm = () => {
             <Typography
               sx={{ fontFamily: '"Roboto", sans-serif', color: "#ecf0f1" }}
             >
-              San Francisco, CA
+              Kampala , UG
             </Typography>
           </Box>
           <Box sx={{ display: "flex", justifyContent: "center", marginTop: 2 }}>
