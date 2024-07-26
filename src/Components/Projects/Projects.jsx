@@ -1,127 +1,194 @@
-// Install dependencies
-// npm install @mui/material @emotion/react @emotion/styled
-
 import React from "react";
-import { Typography, Button, Link } from "@mui/material";
-import { FONT } from "../../Styles/Theme";
+import {
+  Typography,
+  Button,
+  Card,
+  CardContent,
+  CardMedia,
+  CardActions,
+  Grid,
+  Container,
+  Chip,
+  Box,
+} from "@mui/material";
+import { GitHub, Language } from "@mui/icons-material";
+import { FONT, COLORS } from "../../Styles/Theme";
+
+// Import your project images
 import Titl from "../../assets/Titl.png";
 import concoe from "../../assets/concoe.png";
 import prompt from "../../assets/prompt.png";
 
 const projects = [
   {
-    title: "PSYCO SPHERE",
+    title: "PSYCHO SPHERE",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-    image: `${concoe}`,
-    link: "https://quiet-frangipane-5f0ff6.netlify.app/",
+      "A comprehensive Crop management system that allows users to view different coffee varieties, place orders, manage inventory, and view order history.",
+    image: concoe,
+    liveLink: "https://quiet-frangipane-5f0ff6.netlify.app/",
+    githubLink: "https://github.com/don336/Concoe-frontend",
+    technologies: ["React", "Node.js", "MongoDB", "Material UI"],
+    keyFeatures: [
+      "Tabular data that can perform CRUD",
+      "User Authentication ",
+      "Real-time data visualization for Coffee tree tracking",
+    ],
   },
   {
-    title: "TITL",
+    title: " True Soil",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-    image: `${Titl}`,
-    link: "https://client.dev.titl.app/",
+      "Titl is an innovative property management platform designed to streamline and optimize the property management experience for landlords, property managers, and tenants. ",
+    image: Titl,
+    liveLink: "https://client.dev.titl.app/",
+    githubLink: "https://github.com/titl-all/client",
+    technologies: ["React", "GCP", "PostgreSQL", "Material UI", "Tailwind"],
+    keyFeatures: [
+      "Real-time collaboration between landlords, property managers, and tenants using WebSockets",
+      "Automated rent collection, time tracking, and invoicing",
+      "Customizable dashboards with data visualization for property performance and maintenance tracking",
+    ],
   },
   {
     title: "PROMPT SPHERE",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.",
-    image: `${prompt}`,
-    link: "https://prompt-sphere-tau.vercel.app/",
+      "A next-generation AI prompt engineering platform for optimizing large language model interactions across various domains.",
+    image: prompt,
+    liveLink: "https://prompt-sphere-tau.vercel.app/",
+    githubLink: "https://github.com/yourusername/prompt-sphere",
+    technologies: ["Next.js", "Nodejs", "Tailwind CSS", "TypeScript"],
+    keyFeatures: [
+      "Dynamic prompt generation based on context and user history",
+      "A/B testing framework for prompt optimization",
+      "Integration with multiple LLM providers",
+      "Serverless architecture for high scalability",
+    ],
   },
 ];
 
 const ProjectCard = ({ project }) => {
   return (
-    <Link
-      href={project.link}
-      className="bg-blue-100 rounded-lg shadow-lg p-6 mb-6 md:mb-0"
-      sx={{
-        textDecoration: "none",
-      }}
+    <Card
+      elevation={3}
+      sx={{ height: "100%", display: "flex", flexDirection: "column" }}
     >
-      <Typography
-        variant="h6"
-        className="text-blue-600 font-bold mb-2"
-        sx={{
-          fontFamily: FONT.FAMILY.PlayFair,
-          fontWeight: FONT.WEIGHT.BOLD,
-          fontSize: FONT.SIZES[14],
-          lineHeight: FONT.LINE_HEIGHTS[30],
-        }}
-      >
-        {project.title}
-      </Typography>
-
-      <img
-        src={project.image}
+      <CardMedia
+        component="img"
+        height="200"
+        image={project.image}
         alt={project.title}
-        className="w-1/2 h-32 object-fit rounded-lg mb-4"
+        sx={{ objectFit: "cover" }}
       />
-      <Typography
-        variant="body2"
-        className="text-gray-700 mb-4"
-        sx={{
-          fontFamily: FONT.FAMILY.Montserrat,
-          fontWeight: FONT.WEIGHT.SEMIBOLD,
-          fontSize: FONT.SIZES[14],
-          lineHeight: FONT.LINE_HEIGHTS[30],
-        }}
-      >
-        {project.description}
-      </Typography>
-
-      <Button
-        variant="contained"
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="bg-blue-600 text-white "
-        sx={{
-          fontFamily: FONT.FAMILY.Montserrat,
-          fontWeight: FONT.WEIGHT.SEMIBOLD,
-          fontSize: FONT.SIZES[14],
-          lineHeight: FONT.LINE_HEIGHTS[30],
-          width: "240px",
-        }}
-      >
-        Checkout Project
-      </Button>
-    </Link>
+      <CardContent sx={{ flexGrow: 1 }}>
+        <Typography
+          gutterBottom
+          variant="h5"
+          component="div"
+          sx={{
+            fontFamily: FONT.FAMILY.PlayFair,
+            fontWeight: FONT.WEIGHT.BOLD,
+          }}
+        >
+          {project.title}
+        </Typography>
+        <Typography
+          variant="body2"
+          color="text.secondary"
+          sx={{ mb: 2, fontFamily: FONT.FAMILY.Montserrat }}
+        >
+          {project.description}
+        </Typography>
+        <Box sx={{ mb: 2 }}>
+          {project.technologies.map((tech, index) => (
+            <Chip
+              key={index}
+              label={tech}
+              size="small"
+              sx={{ mr: 0.5, mb: 0.5 }}
+            />
+          ))}
+        </Box>
+        <Typography
+          variant="subtitle2"
+          sx={{
+            fontFamily: FONT.FAMILY.PlayFair,
+            fontWeight: FONT.WEIGHT.BOLD,
+            mb: 1,
+          }}
+        >
+          Key Features:
+        </Typography>
+        <ul style={{ paddingLeft: "20px", marginTop: 0 }}>
+          {project.keyFeatures.map((feature, index) => (
+            <li key={index}>
+              <Typography
+                variant="body2"
+                sx={{ fontFamily: FONT.FAMILY.Montserrat }}
+              >
+                {feature}
+              </Typography>
+            </li>
+          ))}
+        </ul>
+      </CardContent>
+      <CardActions>
+        <Button
+          size="small"
+          startIcon={<Language />}
+          href={project.liveLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live Demo
+        </Button>
+        <Button
+          size="small"
+          startIcon={<GitHub />}
+          href={project.githubLink}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          GitHub
+        </Button>
+      </CardActions>
+    </Card>
   );
 };
 
 const Projects = () => {
   return (
-    <div id="Projects" className="mt-32 p-10">
-      <div className="container mx-auto">
+    <Box id="Projects" sx={{ py: 8, bgcolor: COLORS.LIGHTGRAY }}>
+      <Container>
         <Typography
-          variant="h5"
-          className="text-blue-600 font-bold mb-2"
+          variant="h3"
           sx={{
+            mb: 1,
             fontFamily: FONT.FAMILY.PlayFair,
-            fontWeight: FONT.WEIGHT.SEMIBOLD,
-            fontSize: FONT.SIZES[20],
-            lineHeight: FONT.LINE_HEIGHTS[30],
+            fontWeight: FONT.WEIGHT.BOLD,
+            color: COLORS.BLUE,
           }}
         >
-          PROJECTS
+          Featured Projects
         </Typography>
         <Typography
-          variant="body2"
-          className="text-gray-600 mb-6"
-          fontFamily={FONT.FAMILY.Montserrat}
+          variant="h6"
+          sx={{
+            mb: 4,
+            fontFamily: FONT.FAMILY.Montserrat,
+            color: COLORS.DARKGREY,
+            fontWeight: FONT.WEIGHT.BOLD,
+          }}
         >
-          Lorem ipsum dolor sit amet,
+          Showcasing innovative solutions and technical expertise
         </Typography>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+        <Grid container spacing={4}>
           {projects.map((project, index) => (
-            <ProjectCard key={index} project={project} />
+            <Grid item key={index} xs={12} md={6} lg={4}>
+              <ProjectCard project={project} />
+            </Grid>
           ))}
-        </div>
-      </div>
-    </div>
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 

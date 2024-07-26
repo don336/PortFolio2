@@ -1,74 +1,184 @@
 import React from "react";
-import { Container, Typography } from "@mui/material";
-import { FONT } from "../../Styles/Theme";
+import {
+  Container,
+  Typography,
+  Box,
+  Grid,
+  Paper,
+  LinearProgress,
+  Tooltip,
+  Chip,
+} from "@mui/material";
+import { FONT, COLORS } from "../../Styles/Theme";
+import CodeIcon from "@mui/icons-material/Code";
+import StorageIcon from "@mui/icons-material/Storage";
+import BrushIcon from "@mui/icons-material/Brush";
+import BuildIcon from "@mui/icons-material/Build";
 
-const services = [
-  { name: "Figma", level: 50 },
-  { name: "Javascript, React, Node", level: 80 },
-  { name: "HTML & CSS", level: 90 },
-  { name: "GitHub & Git", level: 50 },
-  { name: "MongoDB", level: 48 },
-  { name: "Material UI & Tailwind CSS", level: 48 },
+const skillCategories = [
+  {
+    category: "Frontend Development",
+    icon: <CodeIcon />,
+    skills: [
+      { name: "React.js", level: 90 },
+
+      { name: "JavaScript (ES6+)", level: 95 },
+      { name: "TypeScript", level: 85 },
+      { name: "HTML5 & CSS3", level: 95 },
+      { name: "Redux", level: 80 },
+      { name: "Next.js", level: 75 },
+    ],
+  },
+  {
+    category: "Backend Development",
+    icon: <StorageIcon />,
+    skills: [
+      { name: "Node.js", level: 90 },
+      { name: "Express.js", level: 85 },
+
+      { name: "RESTful APIs", level: 90 },
+
+      { name: "MongoDB", level: 85 },
+      { name: "PostgreSQL", level: 80 },
+    ],
+  },
+  {
+    category: "DevOps & Tools",
+    icon: <BuildIcon />,
+    skills: [
+      { name: "Git & GitHub", level: 90 },
+
+      { name: "CI/CD", level: 75 },
+      { name: "Azure", level: 70 },
+      // { name: "Kubernetes", level: 65 },
+      // { name: "Agile Methodologies", level: 85 },
+    ],
+  },
+  {
+    category: "UI/UX & Design",
+    icon: <BrushIcon />,
+    skills: [
+      { name: "Figma", level: 75 },
+      { name: "Material-UI", level: 90 },
+      { name: "Tailwind CSS", level: 85 },
+      { name: "Responsive Design", level: 90 },
+      { name: "Accessibility", level: 80 },
+    ],
+  },
 ];
+
+const SkillBar = ({ skill }) => (
+  <Tooltip title={`${skill.level}% proficiency`} arrow placement="top">
+    <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+      <Typography
+        variant="body2"
+        sx={{ minWidth: 120, mr: 2, fontFamily: FONT.FAMILY.Montserrat }}
+      >
+        {skill.name}
+      </Typography>
+      <LinearProgress
+        variant="determinate"
+        value={skill.level}
+        sx={{
+          flexGrow: 1,
+          height: 8,
+          borderRadius: 5,
+          backgroundColor: COLORS.LIGHTGRAY,
+          "& .MuiLinearProgress-bar": {
+            backgroundColor: COLORS.BLUE,
+          },
+        }}
+      />
+    </Box>
+  </Tooltip>
+);
+
+const SkillCategory = ({ category }) => (
+  <Paper elevation={3} sx={{ p: 3, height: "100%" }}>
+    <Box sx={{ display: "flex", alignItems: "center", mb: 2 }}>
+      {category.icon}
+      <Typography
+        variant="h6"
+        sx={{
+          ml: 1,
+          fontFamily: FONT.FAMILY.PlayFair,
+          fontWeight: FONT.WEIGHT.BOLD,
+        }}
+      >
+        {category.category}
+      </Typography>
+    </Box>
+    {category.skills.map((skill, index) => (
+      <SkillBar key={index} skill={skill} />
+    ))}
+  </Paper>
+);
 
 const Services = () => {
   return (
-    <Container
-      maxWidth={"xl"}
-      className="bg-gray-100 p-10 rounded-xl mt-32"
-      id="Services"
-    >
-      <div className="container mx-auto">
+    <Box id="Skills" sx={{ py: 8, bgcolor: COLORS.LIGHTGRAY }}>
+      <Container maxWidth="lg">
         <Typography
-          variant="h5"
+          variant="h3"
           sx={{
+            mb: 1,
             fontFamily: FONT.FAMILY.PlayFair,
-            fontWeight: FONT.WEIGHT.SEMIBOLD,
-            fontSize: FONT.SIZES[20],
-            lineHeight: FONT.LINE_HEIGHTS[30],
+            fontWeight: FONT.WEIGHT.BOLD,
+            color: COLORS.BLUE,
           }}
-          className="text-blue-600 font-bold mb-9"
         >
-          SERVICES
+          Technical Skills
         </Typography>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {services.map((service, index) => (
-            <div key={index} className="flex items-center space-x-2">
-              <Typography
-                className="w-1/3 text-left"
-                sx={{
-                  fontFamily: FONT.FAMILY.Montserrat,
-                  fontWeight: FONT.WEIGHT.SEMIBOLD,
-                  fontSize: FONT.SIZES[14],
-                  lineHeight: FONT.LINE_HEIGHTS[30],
-                }}
-              >
-                {service.name}
-              </Typography>
-              <div className="w-2/3 flex items-center space-x-2">
-                <div className="w-full bg-gray-300 rounded-full h-2.5 dark:bg-gray-400">
-                  <div
-                    className="bg-blue-600 h-2.5 rounded-full"
-                    style={{ width: `${service.level}%` }}
-                  ></div>
-                </div>
-                <Typography
-                  className="text-left"
-                  sx={{
-                    fontFamily: FONT.FAMILY.Montserrat,
-                    fontWeight: FONT.WEIGHT.SEMIBOLD,
-                    fontSize: FONT.SIZES[14],
-                    lineHeight: FONT.LINE_HEIGHTS[30],
-                  }}
-                >
-                  {service.level}%
-                </Typography>
-              </div>
-            </div>
+        <Typography
+          variant="h6"
+          sx={{
+            mb: 4,
+            fontFamily: FONT.FAMILY.Montserrat,
+            color: COLORS.DARKGREY,
+            fontWeight: FONT.WEIGHT.BOLD,
+          }}
+        >
+          Comprehensive expertise across the full stack
+        </Typography>
+
+        <Grid container spacing={4}>
+          {skillCategories.map((category, index) => (
+            <Grid item xs={12} md={6} key={index}>
+              <SkillCategory category={category} />
+            </Grid>
           ))}
-        </div>
-      </div>
-    </Container>
+        </Grid>
+
+        <Box sx={{ mt: 6 }}>
+          <Typography
+            variant="h5"
+            sx={{
+              mb: 2,
+              fontFamily: FONT.FAMILY.PlayFair,
+              fontWeight: FONT.WEIGHT.BOLD,
+              color: COLORS.BLUE,
+            }}
+          >
+            Additional Skills & Certifications
+          </Typography>
+          <Box sx={{ display: "flex", flexWrap: "wrap", gap: 1 }}>
+            {[
+              "Collaborative Skills",
+              "Research",
+              "LeaderShip Skills",
+              "Performance Optimization",
+              "Security Best Practices",
+            ].map((skill, index) => (
+              <Chip
+                key={index}
+                label={skill}
+                sx={{ bgcolor: COLORS.BLUE, color: "white" }}
+              />
+            ))}
+          </Box>
+        </Box>
+      </Container>
+    </Box>
   );
 };
 

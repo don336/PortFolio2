@@ -1,5 +1,5 @@
 import React from "react";
-import { Container } from "@mui/material";
+import { Box, Container } from "@mui/material";
 import Navbar from "../Components/Navbar/Navbar";
 import Hero from "../Components/HeroSection/Hero";
 import About from "../Components/About/About";
@@ -10,20 +10,28 @@ import Footer from "../Components/Footer/Footer";
 
 const Home = () => {
   return (
-    <Container
-      maxWidth="xl"
-      className="min-h-screen flex flex-col justify-center items-center mx-auto px-4 sm:px-6 lg:px-8"
-    >
+    <Box sx={{ backgroundColor: "#f5f5f5" }}>
       <Navbar />
-      <div className="w-full">
-        <Hero />
-        <About />
-        <Services />
-        <Projects />
-        <ContactSection />
-      </div>
+      <Container
+        maxWidth="lg"
+        sx={{
+          minHeight: "100vh",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          py: { xs: 4, md: 6 },
+        }}
+      >
+        <Box component="main" sx={{ flexGrow: 1 }}>
+          <Hero />
+          <About />
+          <Services />
+          <Projects />
+          <ContactSection />
+        </Box>
+      </Container>
       <Footer />
-    </Container>
+    </Box>
   );
 };
 

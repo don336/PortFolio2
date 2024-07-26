@@ -1,5 +1,5 @@
 import React from "react";
-import Essential_mode from "../../assets/Essential_mode.jpg";
+import ProfileImage from "../../assets/don336.jpg";
 import { COLORS, FONT } from "../../Styles/Theme";
 import { Link, Typography } from "@mui/material";
 import CustomButton from "../../Elements/CustomButton/CustomButton";
@@ -11,8 +11,8 @@ const About = () => {
       id="About"
     >
       <img
-        src={Essential_mode}
-        alt="Essential_Mode"
+        src={ProfileImage}
+        alt="Senior Software Developer"
         width="565"
         className="rounded-xl h-80 mt-9 md:mt-0"
       />
@@ -25,7 +25,7 @@ const About = () => {
             fontWeight: FONT.WEIGHT.BOLD,
           }}
         >
-          <span className="text-blue-500">About</span> Me
+          <span className="text-blue-500">Professional</span> Overview
         </Typography>
         <Typography
           className="text-left"
@@ -37,10 +37,10 @@ const About = () => {
             mt: 2,
           }}
         >
-          As a Full-Stack Developer, design and functionality should always go
-          hand in hand. That's why I'm dedicated to creating web applications
-          that look beautiful and provide a high level of functionality and
-          interactivity.
+          With over three years of experience as a Junior Full-Stack Developer,
+          I specialize in crafting robust, scalable web applications that
+          seamlessly blend cutting-edge design with high-performance
+          functionality.
         </Typography>
         <Typography
           className="text-left"
@@ -52,9 +52,10 @@ const About = () => {
             mt: 2,
           }}
         >
-          I have worked on various projects using technologies such as HTML,
-          CSS, JavaScript, React, Redux, Express, Node.js, and other modern
-          frontend frameworks.
+          My technical expertise spans a wide range of technologies, including
+          advanced JavaScript frameworks like React, NextJs, backend
+          technologies such as Node.js and Express, and cloud platforms like
+          Azure.
         </Typography>
         <Typography
           className="text-left"
@@ -66,8 +67,11 @@ const About = () => {
             mt: 2,
           }}
         >
-          I enjoy collaborating with other developers and designers to create
-          innovative solutions that meet the needs of clients and users.
+          I thrive in collaborative environments, leveraging my strong
+          communication skills to bridge the gap between technical and
+          non-technical stakeholders. My approach focuses on delivering
+          innovative solutions that drive business value while maintaining code
+          quality and best practices.
         </Typography>
         <div className="mt-3">
           <CustomButton
@@ -78,9 +82,9 @@ const About = () => {
           >
             <Link
               sx={{ textDecoration: "none", color: "#fff" }}
-              href="#Services"
+              href="#Expertise"
             >
-              <Typography variant="w2">Explore My Services</Typography>
+              <Typography variant="w2">Explore My Expertise</Typography>
             </Link>
           </CustomButton>
         </div>
