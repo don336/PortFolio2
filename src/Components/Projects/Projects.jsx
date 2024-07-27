@@ -34,20 +34,7 @@ const projects = [
       "Real-time data visualization for Coffee tree tracking",
     ],
   },
-  {
-    title: " True Soil",
-    description:
-      "Titl is an innovative property management platform designed to streamline and optimize the property management experience for landlords, property managers, and tenants. ",
-    image: Titl,
-    liveLink: "https://client.dev.titl.app/",
-    githubLink: "https://github.com/titl-all/client",
-    technologies: ["React", "GCP", "PostgreSQL", "Material UI", "Tailwind"],
-    keyFeatures: [
-      "Real-time collaboration between landlords, property managers, and tenants using WebSockets",
-      "Automated rent collection, time tracking, and invoicing",
-      "Customizable dashboards with data visualization for property performance and maintenance tracking",
-    ],
-  },
+  
   {
     title: "PROMPT SPHERE",
     description:
